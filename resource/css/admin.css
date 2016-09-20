@@ -1,0 +1,21 @@
+.checkbox-text{font-weight: 500;}
+.sel-span{display: block;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 3px 7px;
+    float: left;}
+.sel-active{
+    background: #07c;
+    color: #fff;
+    border-radius: 4px;
+}
+/*Ìí¼Ó¿Í»§*/
+.control-label{line-height: 35px;}
+/*.sel-span:hover{color: #07c;}*/
+.page-title{font-size: 20px;margin-bottom: 0px;}
+.fl{float: left;}
+.fr{float: right}
+.ml_-35{margin-left: -35px;}
+.lh_28{line-height: 28px;}
+.ml_20{margin-left: 20px;}

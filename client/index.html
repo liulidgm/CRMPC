@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <title>客户-列表</title>
+  <meta name="keywords" content="Bootstrap 3 Admin Dashboard Template Theme" />
+  <meta name="description" content="AdminDesigns - Bootstrap 3 Admin Dashboard Theme">
+  <meta name="author" content="AdminDesigns">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" type="text/css" href="../resource/css/theme.css">
+  <link rel="stylesheet" type="text/css" href="../resource/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../resource/css/admin.css">
+  <!-- Admin Forms CSS -->
+  <link rel="stylesheet" type="text/css" href="../resource/css/admin-forms.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body class="dashboard-page">
+  <!-- Start: Main -->
+  <div id="main">
+    <!-- Start: Header -->
+    <header class="navbar navbar-fixed-top navbar-shadow">
+      <div class="navbar-branding">
+        <a class="navbar-brand" href="dashboard.html">
+          <b>CRM</b>Admin
+        </a>
+        <span id="toggle_sidemenu_l" class="ad ad-lines"></span>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown menu-merge">
+          <div class="navbar-btn btn-group">
+            <button data-toggle="dropdown" class="btn btn-sm dropdown-toggle">
+              <span class="fa fa-bell-o fs14 va-m"></span>
+              <span class="badge badge-danger">9</span>
+            </button>
+            <div class="dropdown-menu dropdown-persist w350 animated animated-shorter fadeIn" role="menu">  
+              <div class="panel mbn">
+                  <div class="panel-menu">
+                     <span class="panel-icon"><i class="fa fa-clock-o"></i></span>
+                     <span class="panel-title fw600"> Recent Activity</span>
+                     <button class="btn btn-default light btn-xs pull-right" type="button"><i class="fa fa-refresh"></i></button>
+                  </div>
+                  <div class="panel-body panel-scroller scroller-navbar scroller-overlay scroller-pn pn">
+                      <ol class="timeline-list">
+                        <li class="timeline-item">
+                          <div class="timeline-icon bg-dark light">
+                            <span class="fa fa-tags"></span>
+                          </div>
+                          <div class="timeline-desc">
+                            <b>Michael</b> Added to his store:
+                            <a href="#">Ipod</a>
+                          </div>
+                          <div class="timeline-date">1:25am</div>
+                        </li>
+                        <li class="timeline-item">
+                          <div class="timeline-icon bg-dark light">
+                            <span class="fa fa-tags"></span>
+                          </div>
+                          <div class="timeline-desc">
+                            <b>Sara</b> Added his store:
+                            <a href="#">Notebook</a>
+                          </div>
+                          <div class="timeline-date">3:05am</div>
+                        </li>
+                        <li class="timeline-item">
+                          <div class="timeline-icon bg-success">
+                            <span class="fa fa-usd"></span>
+                          </div>
+                          <div class="timeline-desc">
+                            <b>Admin</b> created invoice for:
+                            <a href="#">Software</a>
+                          </div>
+                          <div class="timeline-date">4:15am</div>
+                        </li>
+                        <li class="timeline-item">
+                          <div class="timeline-icon bg-success">
+                            <span class="fa fa-usd"></span>
+                          </div>
+                          <div class="timeline-desc">
+                            <b>Admin</b> created invoice for:
+                            <a href="#">Apple</a>
+                          </div>
+                          <div class="timeline-date">7:45am</div>
+                        </li>
+                        <li class="timeline-item">
+                          <div class="timeline-icon bg-success">
+                            <span class="fa fa-usd"></span>
+                          </div>
+                          <div class="timeline-desc">
+                            <b>Admin</b> created invoice for:
+                            <a href="#">Software</a>
+                          </div>
+                          <div class="timeline-date">4:15am</div>
+                        </li>
+                        <li class="timeline-item">
+                          <div class="timeline-icon bg-success">
+                            <span class="fa fa-usd"></span>
+                          </div>
+                          <div class="timeline-desc">
+                            <b>Admin</b> created invoice for:
+                            <a href="#">Apple</a>
+                          </div>
+                          <div class="timeline-date">7:45am</div>
+                        </li>
+                        <li class="timeline-item">
+                          <div class="timeline-icon bg-dark light">
+                            <span class="fa fa-tags"></span>
+                          </div>
+                          <div class="timeline-desc">
+                            <b>Michael</b> Added his store:
+                            <a href="#">Ipod</a>
+                          </div>
+                          <div class="timeline-date">8:25am</div>
+                        </li>
+                        <li class="timeline-item">
+                          <div class="timeline-icon bg-system">
+                            <span class="fa fa-fire"></span>
+                          </div>
+                          <div class="timeline-desc">
+                            <b>Admin</b> created invoice for:
+                            <a href="#">Software</a>
+                          </div>
+                          <div class="timeline-date">4:15am</div>
+                        </li>
+                        <li class="timeline-item">
+                          <div class="timeline-icon bg-dark light">
+                            <span class="fa fa-tags"></span>
+                          </div>
+                          <div class="timeline-desc">
+                            <b>Sara</b> Added to his store:
+                            <a href="#">Notebook</a>
+                          </div>
+                          <div class="timeline-date">3:05am</div>
+                        </li>
+                      </ol>
+       
+                  </div>
+                  <div class="panel-footer text-center p7">
+                    <a href="#" class="link-unstyled"> View All </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown menu-merge">
+          <a href="#" class="dropdown-toggle fw600 p15" data-toggle="dropdown">
+          	<img src="../resource/images/1.jpg" alt="avatar" class="mw30 br64">
+          	<span class="hidden-xs pl15"> Michael .R </span>
+            <span class="caret caret-tp hidden-xs"></span>
+          </a>
+          <ul class="dropdown-menu list-group dropdown-persist w250" role="menu">
+            <li class="list-group-item">
+              <a href="#" class="animated animated-short fadeInUp">
+                <span class="fa fa-envelope"></span> Messages
+                <span class="label label-warning">2</span>
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="#" class="animated animated-short fadeInUp">
+                <span class="fa fa-user"></span> Friends
+                <span class="label label-warning">6</span>
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="#" class="animated animated-short fadeInUp">
+                <span class="fa fa-bell"></span> Notifications </a>
+            </li>
+            <li class="list-group-item">
+              <a href="#" class="animated animated-short fadeInUp">
+                <span class="fa fa-gear"></span> Settings </a>
+            </li>
+            <li class="dropdown-footer">
+              <a href="#" class="">
+              <span class="fa fa-power-off pr5"></span> Logout </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <!-- End: Header -->
+    <!-- Start: Sidebar -->
+    <aside id="sidebar_left" class="nano nano-light affix">
+
+      <!-- Start: Sidebar Left Content -->
+      <div class="sidebar-left-content nano-content">
+
+        <!-- Start: Sidebar Header -->
+        <header class="sidebar-header">
+          <!-- Sidebar Widget - Author -->
+          <div class="sidebar-widget author-widget">
+            <div class="media">
+              <a class="media-left" href="#">
+                <img src="../resource/images/3.jpg" class="img-responsive">
+              </a>
+              <div class="media-body">
+                <div class="media-links">
+                   <a href="#" class="sidebar-menu-toggle">User Menu -</a> <a href="pages_login(alt).html">Logout</a>
+                </div>
+                <div class="media-author">Michael Richards</div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- End: Sidebar Header -->
+
+        <!-- Start: Sidebar Menu -->
+        <ul class="nav sidebar-menu">
+
+          <li class="sidebar-label pt15">Exclusive Tools</li>
+          <li>
+            <a class="accordion-toggle" href="#">
+              <span class="glyphicon glyphicon-user"></span>
+              <span class="sidebar-title">客户</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="nav sub-nav">
+              <li>
+                <a href="admin_plugins-panels.html">
+                  <span class="glyphicon glyphicon-list"></span> 列表 </a>
+              </li>
+              <li>
+                <a href="admin_plugins-modals.html">
+                  <span class="glyphicon glyphicon-plus"></span> 添加客户 </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- End: Sidebar Menu -->
+
+	      <!-- Start: Sidebar Collapse Button -->
+	      <div class="sidebar-toggle-mini">
+	        <a href="#">
+	          <span class="fa fa-sign-out"></span>
+	        </a>
+	      </div>
+	      <!-- End: Sidebar Collapse Button -->
+
+      </div>
+      <!-- End: Sidebar Left Content -->
+
+    </aside>
+    <!-- End: Sidebar Left -->
+    <!-- Start: Content-Wrapper -->
+    <section id="content_wrapper">
+      <!-- Start: Topbar -->
+      <header id="topbar" class="alt">
+        <p class="page-title">客户</p>
+      </header>
+      <!-- End: Topbar -->
+
+      <!-- Begin: Content -->
+      <section id="content" class="table-layout animated fadeIn">
+
+        <!-- begin: .tray-center -->
+        <div class="tray tray-center">
+          <input type="hidden" id = "province"value=""/>
+          <input type="hidden" id="clientType" value=""/>
+          <!--客户分类-->
+          <input type="hidden" id="clientClassify" value=""/>
+          <input type="hidden" id="preference" value=""/>
+          <input type="hidden" id="createByMe" value=""/>
+          <!--公海客户-->
+          <input type="hidden" id="publicClient" value=""/>
+          <input type="hidden" id="partakeClient" value=""/>
+          <input type="hidden" id="responsibleClient" value=""/>
+          <!--我录入的客户-->
+          <input type="hidden" id="inputByMe" value="">
+          <input type="hidden" id="commonClient" value=""/>
+          <input type="hidden" id="importantClient" value=""/>
+          <form class="form-horizontal" role="form">
+            <div class="row">
+              <label class="col-md-2 control-label">省份</label>
+              <div class="col-md-10 mt10">
+                <span class="sel-span sel-active" data-property="province">上海</span>
+                <span class="sel-span" data-property="province" data-value="bj">北京</span>
+                <span class="sel-span" data-property="province" data-value="sh">上海</span>
+                <span class="sel-span" data-property="province" data-value="bj">北京</span>
+                <span class="sel-span" data-property="province" data-value="sh">上海</span>
+                <span class="sel-span" data-property="province" data-value="bj">北京</span>
+
+              </div>
+            </div>
+            <div class="row">
+              <label class="col-md-2 control-label">客户类型</label>
+              <div class="col-md-8 mt10">
+                <span class="sel-span sale" data-property="clientType">销售</span>
+                <span class="sel-span investment-bank" data-property="clientType">投行</span>
+              </div>
+            </div>
+            <div class="row" id="client-classify" style="display: none;">
+              <label class="col-md-2 control-label">客户分类</label>
+              <div class="col-md-8 mt10" id="sale" >
+                <span class="sel-span" data-property="clientClassify"  data-value="bx">保险</span>
+                <span class="sel-span" data-property="clientClassify"  data-value="qs">券商</span>
+                <span class="sel-span" data-property="clientClassify" data-value="xt">信托</span>
+                <span class="sel-span" data-property="clientClassify">基金</span>
+                <span class="sel-span" data-property="clientClassify">银行-国股大行</span>
+                <span class="sel-span" data-property="clientClassify">银行-城商农商农联</span>
+                <span class="sel-span" data-property="clientClassify">其他</span>
+              </div>
+              <div class="col-md-8 mt10" id="investment-bank">
+                <span class="sel-span" data-property="clientClassify">综合类（含地方融资平台）</span>
+                <span class="sel-span" data-property="clientClassify" data-value="cj">采掘</span>
+                <span class="sel-span" data-property="clientClassify" data-value="zz">制造</span>
+                <span class="sel-span" data-property="clientClassify">电力、煤气及水的生产和供应</span>
+                <span class="sel-span" data-property="clientClassify">建筑</span>
+                <span class="sel-span" data-property="clientClassify">交通运输、仓储</span>
+                <span class="sel-span" data-property="clientClassify">信息技术</span>
+                <span class="sel-span" data-property="clientClassify">批发和零售贸易</span>
+                <span class="sel-span" data-property="clientClassify">金融、保险</span>
+                <span class="sel-span" data-property="clientClassify">房地产</span>
+                <span class="sel-span" data-property="clientClassify">社会服务</span>
+                <span class="sel-span" data-property="clientClassify">传播与文化产业</span>
+                <span class="sel-span" data-property="clientClassify">农林牧渔</span>
+              </div>
+            </div>
+            <div class="row">
+              <label class="col-md-2 control-label">投资偏好</label>
+              <div class="col-md-8">
+                <span class="sel-span" data-property = "preference" data-value="ty">同业资产（资金、存款、理财）</span>
+                <span class="sel-span" data-property = "preference" data-value="hb">货币基金</span>
+                <span class="sel-span" data-property = "preference" data-value="bb">保本型基金</span>
+                <span class="sel-span" data-property = "preference" data-value="xt">信托产品</span>
+                <span class="sel-span" data-property = "preference">证券管理型投资</span>
+                <span class="sel-span" data-property = "preference">票据及信用证</span>
+                <span class="sel-span" data-property = "preference">信用债</span>
+                <span class="sel-span" data-property = "preference">非标债权</span>
+                <span class="sel-span" data-property = "preference">标准类资产支持证券和债权</span>
+                <span class="sel-span" data-property = "preference">非标准类资产支持证券和债权</span>
+                <span class="sel-span" data-property = "preference">产业基金投资</span>
+                <span class="sel-span" data-property = "preference">资本市场类投资（定增/质押/二级市场配资）</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="checkbox-custom mb5 fl">
+                  <input type="checkbox" class="check" data-property="createByMe" id="created">
+                  <label for="created">我创建的</label>
+                </div>
+                <div class="checkbox-custom mb5 fl">
+                  <input type="checkbox" class="check" data-property="publicClient" id="public">
+                  <label for="public">公海客户</label>
+                </div>
+                <div class="checkbox-custom mb5 fl">
+                  <input type="checkbox" class="check" data-property="partakeClient" id="partake">
+                  <label for="partake">我参与的客户</label>
+                </div>
+                <div class="checkbox-custom mb5 fl">
+                  <input type="checkbox" class="check" data-property="responsibleClient" id="responsible">
+                  <label for="responsible">我负责的客户</label>
+                </div>
+                <div class="checkbox-custom mb5 fl">
+                  <input type="checkbox" class="check" data-property="inputByMe" id="input">
+                  <label for="input">我录入的客户</label>
+                </div>
+                <div class="checkbox-custom mb5 fl">
+                  <input type="checkbox" class="check" data-property="commonClient" id="common">
+                  <label for="common">普通客户</label>
+                </div>
+                <div class="checkbox-custom mb5 fl">
+                  <input type="checkbox" class="check" data-property="importantClient" id="important">
+                  <label for="important">重要客户</label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <table class="table table-hover">
+            <thead>
+            <tr>
+              <th>客户名称</th>
+              <th>客户类型</th>
+              <th>客户分类</th>
+              <th>客户省份</th>
+              <th>投资偏好</th>
+              <th>创建者</th>
+              <th>联系人</th>
+              <th>备注</th>
+              <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>招商银行-上海分行资产管理部</td>
+              <td>投行</td>
+              <td>银行-国股大行</td>
+              <td>上海</td>
+              <td>信用债、非标债权、同业资产</td>
+              <td>刘莉</td>
+              <td>刘莉</td>
+              <td>此数据为模板数据</td>
+              <td>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
+                    <span class="caret ml5"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li>
+                      <a href="#">新增活动记录</a>
+                    </li>
+                    <li>
+                      <a href="#">编辑</a>
+                    </li>
+                    <li>
+                      <a href="#">新增联系人</a>
+                    </li>
+                    <li>
+                      <a href="#">维护负责人</a>
+                    </li>
+                    <li>
+                      <a href="#">设为关键客户</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>招商银行-上海分行资产管理部</td>
+              <td>投行</td>
+              <td>银行-国股大行</td>
+              <td>上海</td>
+              <td>信用债、非标债权、同业资产</td>
+              <td>刘莉</td>
+              <td>刘莉</td>
+              <td>此数据为模板数据</td>
+              <td>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
+                    <span class="caret ml5"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li>
+                      <a href="#">新增活动记录</a>
+                    </li>
+                    <li>
+                      <a href="#">编辑</a>
+                    </li>
+                    <li>
+                      <a href="#">新增联系人</a>
+                    </li>
+                    <li>
+                      <a href="#">维护负责人</a>
+                    </li>
+                    <li>
+                      <a href="#">设为关键客户</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>招商银行-上海分行资产管理部</td>
+              <td>投行</td>
+              <td>银行-国股大行</td>
+              <td>上海</td>
+              <td>信用债、非标债权、同业资产</td>
+              <td>刘莉</td>
+              <td>刘莉</td>
+              <td>此数据为模板数据</td>
+              <td>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
+                    <span class="caret ml5"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li>
+                      <a href="#">新增活动记录</a>
+                    </li>
+                    <li>
+                      <a href="#">编辑</a>
+                    </li>
+                    <li>
+                      <a href="#">新增联系人</a>
+                    </li>
+                    <li>
+                      <a href="#">维护负责人</a>
+                    </li>
+                    <li>
+                      <a href="#">设为关键客户</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <ul class="pagination" style="float: right;">
+            <li class="paginate_button previous disabled" aria-controls="datatable5" tabindex="0" id="datatable5_previous">
+              <a href="#">Previous</a>
+            </li>
+            <li class="paginate_button active" aria-controls="datatable5" tabindex="0">
+              <a href="#">1</a>
+            </li>
+            <li class="paginate_button" aria-controls="datatable5" tabindex="0">
+              <a href="#">2</a>
+            </li>
+            <li class="paginate_button" aria-controls="datatable5" tabindex="0">
+              <a href="#">3</a>
+            </li>
+            <li class="paginate_button" aria-controls="datatable5" tabindex="0">
+              <a href="#">4</a>
+            </li>
+            <li class="paginate_button next" aria-controls="datatable5" tabindex="0" id="datatable5_next">
+              <a href="#">Next</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end: .tray-center -->
+
+      </section>
+      <!-- End: Content -->
+    </section>
+    <!-- End: Content-Wrapper -->
+
+
+  </div>
+  <!-- End: Main -->
+
+  <!-- BEGIN: PAGE SCRIPTS -->
+
+  <!-- jQuery -->
+  <script src="../resource/js/jquery-1.11.1.min.js"></script>
+  <script src="../resource/js/jquery_ui/jquery-ui.min.js"></script>
+<!-- Theme Javascript -->
+<script src="../resource/js/utility.js"></script>
+<script src="../resource/js/main.js"></script>
+
+  <script type="text/javascript">
+  jQuery(document).ready(function() {
+    "use strict";
+    // Init Theme Core    
+    Core.init();
+    $('.sel-span').click(function(){
+        if($(this).hasClass('sel-active')){
+          $(this).removeClass('sel-active');
+          if($(this).hasClass('sale')||$(this).hasClass('investment-bank')){
+            $("#client-classify").css("display","none");
+          }
+          //收集查询参数、调用查询方法
+          var val = $(this).data("value");
+          var haved_val = $("#"+$(this).data("property")).val().replace(val,"");
+          $("#"+$(this).data("property")).val(haved_val);
+          //alert($("#"+$(this).data("property")).val());
+          ajaxQuery();
+        }else{
+          $(this).addClass('sel-active');
+          if($(this).hasClass('sale')){
+            $('.investment-bank').removeClass('sel-active');
+            $("#client-classify").css("display","block");
+            $("#sale").css("display","block");
+            $("#investment-bank").css("display","none");
+          }
+          if($(this).hasClass('investment-bank')){
+            $('.sale').removeClass('sel-active');
+            $("#client-classify").css("display","block");
+            $("#investment-bank").css("display","block");
+            $("#sale").css("display","none");
+          }
+          //收集查询参数、调用查询方法
+          //alert($(this).data("property"));
+          var val = "";
+          if(""==$("#"+$(this).data("property")).val()){
+            val = $(this).data("value");
+          }else{
+            val = $("#"+$(this).data("property")).val()+","+$(this).data("value");
+          }
+          $("#"+$(this).data("property")).val(val);
+          ajaxQuery();
+      }
+
+    });
+
+    $('.check').click(function(){
+      if($(this).is(':checked')){
+        $("#"+$(this).data("property")).val(true);
+      }else{
+        $("#"+$(this).data("property")).val(false);
+      }
+      ajaxQuery();
+    });
+
+  });
+
+  function getparameter(){
+    var parameters = {
+      "province":"",
+      "clientType":"",
+      "clientClassify":"",
+      "preference":"",
+
+      "createByMe":"",
+      "publicClient":"",
+      "partakeClient":"",
+      "responsibleClient":"",
+      "inputByMe":"",
+      "commonClient":"",
+      "importantClient":""
+    };
+    parameters.province =  $("#province").val();
+    parameters.clientType = $("#clientType").val();
+    parameters.clientClassify = $("#clientClassify").val();
+    parameters.preference = $("#preference").val();
+    parameters.createByMe = $("#createByMe").val();
+    parameters.publicClient = $("#publicClient").val();
+    parameters.partakeClient = $("#partakeClient").val();
+    parameters.responsibleClient = $("#responsibleClient").val();
+    parameters.inputByMe = $("#inputByMe").val();
+    parameters.commonClient = $("#commonClient").val();
+    parameters.importantClient = $("#importantClient").val();
+    return parameters;
+  }
+    //异步查询
+    function ajaxQuery(){
+      var params = getparameter();
+     console.log(params);
+  }
+
+  </script>
+  <!-- END: PAGE SCRIPTS -->
+
+</body>
+
+</html>
