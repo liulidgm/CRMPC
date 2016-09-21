@@ -20394,7 +20394,7 @@ body.external-page {
 }
 body.external-page #main {
   overflow: hidden;
-  background: url("../../../img/patterns/backgrounds/1.jpg") no-repeat top center #2d494d;
+  background: url("../images/login_bg.jpg") no-repeat top center #2d494d;
 }
 body.external-page #main:before {
   display: none;
