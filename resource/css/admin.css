@@ -13,7 +13,16 @@
 /*Ìí¼Ó¿Í»§*/
 .control-label{line-height: 35px;}
 /*.sel-span:hover{color: #07c;}*/
-.page-title{font-size: 20px;margin-bottom: 0px;}
+.page-title{font-size: 20px;margin-bottom: 0px;line-height: 40px;}
+/*detail*/
+.comment{cursor: pointer;}
+.comment.active{color: #07c;}
+#add_team_member tr td{font-size: 14px;text-align: left;font-weight: normal;}
+
+/*icon*/
+.gg{background: url("../images/lx.png") no-repeat right;width: 20px;height: 20px;}
+.comment:hover{color: #07c;}
+.comment:active{color: #07c;}
 .fl{float: left;}
 .fr{float: right}
 .ml_-35{margin-left: -35px;}

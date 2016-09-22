@@ -13,8 +13,9 @@
   <link rel="stylesheet" type="text/css" href="../resource/css/reset.css">
   <link rel="stylesheet" type="text/css" href="../resource/css/admin.css">
   <!-- Admin Forms CSS -->
-  <link rel="stylesheet" type="text/css" href="../resource/css/admin-forms.min.css">
-
+  <link rel="stylesheet" type="text/css" href="../resource/css/admin-forms.css">
+<!--plugin-->
+  <link rel="stylesheet" href="../resource/plugin/magnific/magnific-popup.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -144,8 +145,21 @@
     <!-- Start: Content-Wrapper -->
     <section id="content_wrapper">
       <!-- Start: Topbar -->
-      <header id="topbar" class="alt">
-        <p class="page-title">客户</p>
+      <header id="topbar" class="alt admin-form">
+        <div class="col-md-7"><p class="page-title">客户</p></div>
+        <div class="col-md-5">
+          <form method="post" action="" id="form-ui">
+            <div class="smart-widget sm-right smr-50">
+              <label class="field">
+                <input type="text" name="sub" id="sub" class="gui-input" placeholder="查询客户或活动记录">
+              </label>
+              <button type="submit" class="button btn-primary">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
       </header>
       <!-- End: Topbar -->
 
@@ -172,10 +186,10 @@
             <div class="row">
               <label class="col-md-2 control-label">省份</label>
               <div class="col-md-10 mt10">
-                <span class="sel-span sel-active" data-property="province">上海</span>
+                <span class="sel-span" data-property="province">上海</span>
                 <span class="sel-span" data-property="province" data-value="bj">北京</span>
                 <span class="sel-span" data-property="province" data-value="sh">上海</span>
-                <span class="sel-span" data-property="province" data-value="bj">北京</span>
+                <span class="sel-span" data-property="province" data-value="sz">深圳</span>
                 <span class="sel-span" data-property="province" data-value="sh">上海</span>
                 <span class="sel-span" data-property="province" data-value="bj">北京</span>
 
@@ -268,121 +282,104 @@
           </form>
           <table class="table table-hover">
             <thead>
-            <tr>
-              <th>客户名称</th>
-              <th>客户类型</th>
-              <th>客户分类</th>
-              <th>客户省份</th>
-              <th>投资偏好</th>
-              <th>创建者</th>
-              <th>联系人</th>
-              <th>备注</th>
+            <tr><th style="width: 200px;">客户名称</th>
+              <th style="width: 75px;">客户类型</th>
+              <th style="width: 120px;">客户分类</th>
+              <th style="width: 75px;">客户省份</th>
+              <th style="width: 250px;">投资偏好</th>
+              <th style="width: 75px;">创建者</th>
+              <th style="width: 75px;">联系人</th>
+              <th style="width: 120px;">备注</th>
               <th></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td>招商银行-上海分行资产管理部</td>
-              <td>投行</td>
-              <td>银行-国股大行</td>
-              <td>上海</td>
-              <td>信用债、非标债权、同业资产</td>
-              <td>刘莉</td>
-              <td>刘莉</td>
-              <td>此数据为模板数据</td>
-              <td>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
-                    <span class="caret ml5"></span>
-                  </button>
-                  <ul class="dropdown-menu" role="menu">
-                    <li>
-                      <a href="#">新增活动记录</a>
-                    </li>
-                    <li>
-                      <a href="#">编辑</a>
-                    </li>
-                    <li>
-                      <a href="#">新增联系人</a>
-                    </li>
-                    <li>
-                      <a href="#">维护负责人</a>
-                    </li>
-                    <li>
-                      <a href="#">设为关键客户</a>
-                    </li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>招商银行-上海分行资产管理部</td>
-              <td>投行</td>
-              <td>银行-国股大行</td>
-              <td>上海</td>
-              <td>信用债、非标债权、同业资产</td>
-              <td>刘莉</td>
-              <td>刘莉</td>
-              <td>此数据为模板数据</td>
-              <td>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
-                    <span class="caret ml5"></span>
-                  </button>
-                  <ul class="dropdown-menu" role="menu">
-                    <li>
-                      <a href="#">新增活动记录</a>
-                    </li>
-                    <li>
-                      <a href="#">编辑</a>
-                    </li>
-                    <li>
-                      <a href="#">新增联系人</a>
-                    </li>
-                    <li>
-                      <a href="#">维护负责人</a>
-                    </li>
-                    <li>
-                      <a href="#">设为关键客户</a>
-                    </li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>招商银行-上海分行资产管理部</td>
-              <td>投行</td>
-              <td>银行-国股大行</td>
-              <td>上海</td>
-              <td>信用债、非标债权、同业资产</td>
-              <td>刘莉</td>
-              <td>刘莉</td>
-              <td>此数据为模板数据</td>
-              <td>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
-                    <span class="caret ml5"></span>
-                  </button>
-                  <ul class="dropdown-menu" role="menu">
-                    <li>
-                      <a href="#">新增活动记录</a>
-                    </li>
-                    <li>
-                      <a href="#">编辑</a>
-                    </li>
-                    <li>
-                      <a href="#">新增联系人</a>
-                    </li>
-                    <li>
-                      <a href="#">维护负责人</a>
-                    </li>
-                    <li>
-                      <a href="#">设为关键客户</a>
-                    </li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
+            </tr></thead>
+            <tbody id="clientList">
+              <tr>
+                <td>招商银行-上海分行资产管理部</td>
+                <td>销售</td>
+                <td>银行-国股大行</td>
+                <td>上海</td>
+                <td>同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）</td>
+                <td>周宇轩</td>
+                <td>周宇轩</td>
+                <td>用户修改模块测试</td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
+                      <span class="caret ml5"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li>
+                        <a href="#">编辑</a>
+                      </li>
+                      <li>
+                        <a href="#">维护负责人</a>
+                      </li>
+                      <li>
+                        <a href="#">设为关键客户</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>换手机</td>
+                <td>销售</td>
+                <td>券商</td>
+                <td>上海</td>
+                <td>保本型基金,信托产品 ,证券管理型投资</td>
+                <td>刘莉</td>
+                <td>刘莉</td>
+                <td>方便</td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
+                      <span class="caret ml5"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li>
+                        <a href="#">编辑</a>
+                      </li>
+                      <li>
+                        <a href="#">维护负责人</a>
+                      </li>
+                      <li>
+                        <a href="#">设为关键客户</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>上投摩根基金-固定收益部</td>
+                <td>销售</td>
+                <td>基金</td>
+                <td>上海</td>
+                <td>信用债,标准类资产支持证券和债权</td>
+                <td>蔡盛贤</td>
+                <td>蔡盛贤</td>
+                <td>暂无</td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
+                      <span class="caret ml5"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li>
+                        <a href="#">编辑</a>
+                      </li>
+                      <li>
+                        <a href="#">维护负责人</a>
+                      </li>
+                      <li>
+                        <a href="#">设为关键客户</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
             </tbody>
           </table>
           <ul class="pagination" style="float: right;">
@@ -422,6 +419,7 @@
   <!-- jQuery -->
   <script src="../resource/js/jquery-1.11.1.min.js"></script>
   <script src="../resource/js/jquery_ui/jquery-ui.min.js"></script>
+
 <!-- Theme Javascript -->
 <script src="../resource/js/utility.js"></script>
 <script src="../resource/js/main.js"></script>
@@ -431,6 +429,16 @@
     "use strict";
     // Init Theme Core    
     Core.init();
+    //
+    function getStr(sourceStr, strArr) {
+      var source = sourceStr;
+     // for (var key in strArr) {
+      source = source.replace(new RegExp('^(' + strArr + ',)*', 'g'), '').replace(new RegExp('(,' + strArr + ')*$', 'g'), '').replace(new RegExp(',' + strArr + ',', 'g'), ',').replace(new RegExp('^' + strArr + '$', 'g'), '');
+     // }
+      return source;
+
+    }
+
     $('.sel-span').click(function(){
         if($(this).hasClass('sel-active')){
           $(this).removeClass('sel-active');
@@ -439,9 +447,9 @@
           }
           //收集查询参数、调用查询方法
           var val = $(this).data("value");
-          var haved_val = $("#"+$(this).data("property")).val().replace(val,"");
-          $("#"+$(this).data("property")).val(haved_val);
-          //alert($("#"+$(this).data("property")).val());
+          var haved_val = $("#"+$(this).data("property")).val();
+          var result = getStr(haved_val, val);
+          $("#"+$(this).data("property")).val(result  );
           ajaxQuery();
         }else{
           $(this).addClass('sel-active');

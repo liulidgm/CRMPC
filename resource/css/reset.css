@@ -3,7 +3,7 @@
     max-width: 100%;
     margin-bottom: 0;
     background: #fff;
-    border:1px solid #ccc;
+    border:0px solid #ccc;
 }
 .dropdown-menu {
     position: absolute;
@@ -29,3 +29,37 @@
         padding-top: 10px;
     }
 }
+.pagination {
+     margin: 0;
+}
+.panel-heading {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+}
+.thumbnail {
+     padding: 0px;
+     border: 0px solid #dddddd;
+    border-radius: 100%;
+}
+.table > tbody > tr > td{
+    padding: 9px 9px 9px 15px;
+    line-height: 1.49;
+    vertical-align: middle;
+    border-top: 1px solid #eeeeee;
+}
+.media {
+    color: #999999;
+    font-weight: 600;
+    margin-top: 15px;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+
+}
+.admin-form .panel-heading {
+    padding: 0px 20px;
+}
+.admin-form .panel-title {
+    font-size: 18px;
+}
+
