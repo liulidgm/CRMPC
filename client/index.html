@@ -44,39 +44,6 @@
             </button>
           </div>
         </li>
-        <li class="dropdown menu-merge">
-          <a href="#" class="dropdown-toggle fw600 p15" data-toggle="dropdown">
-          	<img src="../resource/images/1.jpg" alt="avatar" class="mw30 br64">
-          	<span class="hidden-xs pl15"> Michael .R </span>
-            <span class="caret caret-tp hidden-xs"></span>
-          </a>
-          <ul class="dropdown-menu list-group dropdown-persist w250" role="menu">
-            <li class="list-group-item">
-              <a href="#" class="animated animated-short fadeInUp">
-                <span class="fa fa-envelope"></span> Messages
-                <span class="label label-warning">2</span>
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="#" class="animated animated-short fadeInUp">
-                <span class="fa fa-user"></span> Friends
-                <span class="label label-warning">6</span>
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="#" class="animated animated-short fadeInUp">
-                <span class="fa fa-bell"></span> Notifications </a>
-            </li>
-            <li class="list-group-item">
-              <a href="#" class="animated animated-short fadeInUp">
-                <span class="fa fa-gear"></span> Settings </a>
-            </li>
-            <li class="dropdown-footer">
-              <a href="#" class="">
-              <span class="fa fa-power-off pr5"></span> Logout </a>
-            </li>
-          </ul>
-        </li>
       </ul>
     </header>
     <!-- End: Header -->
@@ -96,9 +63,9 @@
               </a>
               <div class="media-body">
                 <div class="media-links">
-                   <a href="#" class="sidebar-menu-toggle">User Menu -</a> <a href="pages_login(alt).html">Logout</a>
+                   <a href="#" class="sidebar-menu-toggle">刘莉 -</a> <a href="pages_login(alt).html">退出</a>
                 </div>
-                <div class="media-author">Michael Richards</div>
+                <div class="media-author">Webcome</div>
               </div>
             </div>
           </div>
@@ -107,8 +74,6 @@
 
         <!-- Start: Sidebar Menu -->
         <ul class="nav sidebar-menu">
-
-          <li class="sidebar-label pt15">Exclusive Tools</li>
           <li>
             <a class="accordion-toggle" href="#">
               <span class="glyphicon glyphicon-user"></span>
@@ -128,15 +93,6 @@
           </li>
         </ul>
         <!-- End: Sidebar Menu -->
-
-	      <!-- Start: Sidebar Collapse Button -->
-	      <div class="sidebar-toggle-mini">
-	        <a href="#">
-	          <span class="fa fa-sign-out"></span>
-	        </a>
-	      </div>
-	      <!-- End: Sidebar Collapse Button -->
-
       </div>
       <!-- End: Sidebar Left Content -->
 
@@ -164,7 +120,7 @@
       <!-- End: Topbar -->
 
       <!-- Begin: Content -->
-      <section id="content" class="table-layout animated fadeIn">
+      <section id="content" class="table-layout animated fadeIn client_list">
 
         <!-- begin: .tray-center -->
         <div class="tray tray-center">
@@ -185,7 +141,7 @@
           <form class="form-horizontal" role="form">
             <div class="row">
               <label class="col-md-2 control-label">省份</label>
-              <div class="col-md-10 mt10">
+              <div class="col-md-10">
                 <span class="sel-span" data-property="province">上海</span>
                 <span class="sel-span" data-property="province" data-value="bj">北京</span>
                 <span class="sel-span" data-property="province" data-value="sh">上海</span>
@@ -197,14 +153,14 @@
             </div>
             <div class="row">
               <label class="col-md-2 control-label">客户类型</label>
-              <div class="col-md-8 mt10">
+              <div class="col-md-8">
                 <span class="sel-span sale" data-property="clientType">销售</span>
                 <span class="sel-span investment-bank" data-property="clientType">投行</span>
               </div>
             </div>
             <div class="row" id="client-classify" style="display: none;">
               <label class="col-md-2 control-label">客户分类</label>
-              <div class="col-md-8 mt10" id="sale" >
+              <div class="col-md-8" id="sale" >
                 <span class="sel-span" data-property="clientClassify"  data-value="bx">保险</span>
                 <span class="sel-span" data-property="clientClassify"  data-value="qs">券商</span>
                 <span class="sel-span" data-property="clientClassify" data-value="xt">信托</span>
@@ -213,7 +169,7 @@
                 <span class="sel-span" data-property="clientClassify">银行-城商农商农联</span>
                 <span class="sel-span" data-property="clientClassify">其他</span>
               </div>
-              <div class="col-md-8 mt10" id="investment-bank">
+              <div class="col-md-8" id="investment-bank">
                 <span class="sel-span" data-property="clientClassify">综合类（含地方融资平台）</span>
                 <span class="sel-span" data-property="clientClassify" data-value="cj">采掘</span>
                 <span class="sel-span" data-property="clientClassify" data-value="zz">制造</span>
@@ -270,38 +226,35 @@
                   <label for="input">我录入的客户</label>
                 </div>
                 <div class="checkbox-custom mb5 fl">
-                  <input type="checkbox" class="check" data-property="commonClient" id="common">
-                  <label for="common">普通客户</label>
-                </div>
-                <div class="checkbox-custom mb5 fl">
                   <input type="checkbox" class="check" data-property="importantClient" id="important">
                   <label for="important">重要客户</label>
                 </div>
               </div>
             </div>
           </form>
-          <table class="table table-hover">
+          <table class="table table-striped table-hover">
             <thead>
-            <tr><th style="width: 200px;">客户名称</th>
-              <th style="width: 75px;">客户类型</th>
+            <tr>
+              <th style="width: 150px;">客户名称</th>
+              <th style="width: 100px;">客户类型</th>
               <th style="width: 120px;">客户分类</th>
-              <th style="width: 75px;">客户省份</th>
-              <th style="width: 250px;">投资偏好</th>
-              <th style="width: 75px;">创建者</th>
-              <th style="width: 75px;">联系人</th>
-              <th style="width: 120px;">备注</th>
+              <th style="width: 100px;">客户省份</th>
+              <th style="width: 150px;">投资偏好</th>
+              <th style="width: 100px;">创建者</th>
+              <th style="width: 100px;">联系人</th>
+              <th style="width: 150px;">备注</th>
               <th></th>
             </tr></thead>
             <tbody id="clientList">
               <tr>
-                <td>招商银行-上海分行资产管理部</td>
+                <td class="text_overflow" data-toggle="tooltip" title="招商银行-上海分行资产管理部">招商银行-上海分行资产管理部</td>
                 <td>销售</td>
                 <td>银行-国股大行</td>
                 <td>上海</td>
-                <td>同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）</td>
+                <td class="text_overflow" data-toggle="tooltip" title="同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）">同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）</td>
                 <td>周宇轩</td>
                 <td>周宇轩</td>
-                <td>用户修改模块测试</td>
+                <td class="text_overflow" data-toggle="tooltip" title="用户修改模块测试">用户修改模块测试</td>
                 <td>
                   <div class="btn-group">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
@@ -312,10 +265,10 @@
                         <a href="#">编辑</a>
                       </li>
                       <li>
-                        <a href="#">维护负责人</a>
+                        <a class="add_item_btn" data-href="update_charge_person">维护负责人</a>
                       </li>
                       <li>
-                        <a href="#">设为关键客户</a>
+                        <a href="#" onclick="ch()">设为关键客户</a>
                       </li>
                     </ul>
                   </div>
@@ -323,14 +276,14 @@
               </tr>
 
               <tr>
-                <td>换手机</td>
+                <td  class="text_overflow" data-toggle="tooltip" title="换手机">换手机</td>
                 <td>销售</td>
                 <td>券商</td>
                 <td>上海</td>
-                <td>保本型基金,信托产品 ,证券管理型投资</td>
+                <td  class="text_overflow" data-toggle="tooltip" title="保本型基金,信托产品 ,证券管理型投资">保本型基金,信托产品 ,证券管理型投资</td>
                 <td>刘莉</td>
                 <td>刘莉</td>
-                <td>方便</td>
+                <td  class="text_overflow" data-toggle="tooltip" title="方便">方便</td>
                 <td>
                   <div class="btn-group">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
@@ -341,7 +294,7 @@
                         <a href="#">编辑</a>
                       </li>
                       <li>
-                        <a href="#">维护负责人</a>
+                        <a class="add_item_btn" data-href="update_charge_person">维护负责人</a>
                       </li>
                       <li>
                         <a href="#">设为关键客户</a>
@@ -352,14 +305,14 @@
               </tr>
 
               <tr>
-                <td>上投摩根基金-固定收益部</td>
+                <td class="text_overflow" data-toggle="tooltip" title="招商银行-上海分行资产管理部">招商银行-上海分行资产管理部</td>
                 <td>销售</td>
-                <td>基金</td>
+                <td>银行-国股大行</td>
                 <td>上海</td>
-                <td>信用债,标准类资产支持证券和债权</td>
-                <td>蔡盛贤</td>
-                <td>蔡盛贤</td>
-                <td>暂无</td>
+                <td class="text_overflow" data-toggle="tooltip" title="同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）">同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）</td>
+                <td>周宇轩</td>
+                <td>周宇轩</td>
+                <td class="text_overflow" data-toggle="tooltip" title="用户修改模块测试">用户修改模块测试</td>
                 <td>
                   <div class="btn-group">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
@@ -370,19 +323,18 @@
                         <a href="#">编辑</a>
                       </li>
                       <li>
-                        <a href="#">维护负责人</a>
+                        <a class="add_item_btn" data-href="update_charge_person">维护负责人</a>
                       </li>
                       <li>
-                        <a href="#">设为关键客户</a>
+                        <a href="#" onclick="ch()">设为关键客户</a>
                       </li>
                     </ul>
                   </div>
                 </td>
               </tr>
-
             </tbody>
           </table>
-          <ul class="pagination" style="float: right;">
+          <ul class="pagination mt20" style="float: right;">
             <li class="paginate_button previous disabled" aria-controls="datatable5" tabindex="0" id="datatable5_previous">
               <a href="#">Previous</a>
             </li>
@@ -402,6 +354,53 @@
               <a href="#">Next</a>
             </li>
           </ul>
+          <!--dialog-->
+          <div id="update_charge_person" class=" popup-basic admin-form mfp-with-anim mfp-hide">
+            <div class="panel">
+              <div class="panel-heading" style="padding: 10px 15px;">
+                <span class="panel-title" style="font-size: 18px;font-weight: normal">维护负责人</span>
+              </div>
+              <!-- end .panel-heading section -->
+
+              <form method="post" action="/">
+                <div class="panel-body panel-scroller scroller-sm scroller-pn pn">
+                  <table class="table mbn tc-icon-1 tc-med-2 tc-bold-last">
+                    <thead>
+                    <tr class="hidden">
+                      <th>姓名</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>李娜</td>
+                    </tr>
+                    <tr>
+                      <td>李杰</td>
+                    </tr>
+                    <tr>
+                      <td>蔡盛贤</td>
+                    </tr>
+                    <tr>
+                      <td>刘莉</td>
+                    </tr>
+                    <tr>
+                      <td>谢挺</td>
+                    </tr>
+
+                    </tbody>
+                  </table>
+
+                </div>
+                <!-- end .form-body section -->
+
+                <div class="panel-footer">
+                  <button type="submit" class="button btn-primary">提交</button>
+                </div>
+                <!-- end .form-footer section -->
+              </form>
+            </div>
+            <!-- end: .panel -->
+          </div>
         </div>
         <!-- end: .tray-center -->
 
@@ -423,13 +422,17 @@
 <!-- Theme Javascript -->
 <script src="../resource/js/utility.js"></script>
 <script src="../resource/js/main.js"></script>
-
+  <!--plugin-->
+  <script src="../resource/plugin/magnific/jquery.magnific-popup.min.js"></script>
+  <script src="../resource/js/common.js"></script>
   <script type="text/javascript">
   jQuery(document).ready(function() {
     "use strict";
     // Init Theme Core    
     Core.init();
-    //
+    //tooltips
+    $("[data-toggle='tooltip']").tooltip();
+    //字符串处理
     function getStr(sourceStr, strArr) {
       var source = sourceStr;
      // for (var key in strArr) {
@@ -487,7 +490,30 @@
       }
       ajaxQuery();
     });
+    //dialog
+    $('.add_item_btn').on('click', function() {
+      //此处需要获取当前数据的key，以此确定维护的是哪条数据
+      var activeModal = $('#'+$(this).data('href'));
+      // Inline Admin-Form example
+      $.magnificPopup.open({
+        removalDelay: 500, //delay removal by X to allow out-animation,
+        items: {
+          src: activeModal
+        },
+        // overflowY: 'hidden', //
+        callbacks: {
+          beforeOpen: function(e) {
+            var Animation ='mfp-sign';
+            this.st.mainClass = Animation;
+          }
+        },
+        midClick: true
+      });
 
+    });
+    $("#update_charge_person tr").click(function(){
+      singleSelect(this);
+    });
   });
 
   function getparameter(){
@@ -519,9 +545,17 @@
     return parameters;
   }
     //异步查询
-    function ajaxQuery(){
+  function ajaxQuery(){
       var params = getparameter();
      console.log(params);
+  }
+  //设置关键用户，此方法需要接受当前数据的key
+  function ch() {
+    if(confirm('确定设置为关键用户吗？')) {
+
+    } else {
+      return false;
+    }
   }
 
   </script>

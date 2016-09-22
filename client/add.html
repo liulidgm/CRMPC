@@ -10,11 +10,12 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" type="text/css" href="../resource/css/theme.css">
-    <link rel="stylesheet" type="text/css" href="../resource/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../resource/css/admin.css">
     <!-- Admin Forms CSS -->
     <link rel="stylesheet" type="text/css" href="../resource/css/admin-forms.min.css">
-
+    <!--plugin-->
+    <link rel="stylesheet" href="../resource/plugin/select2/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/admin.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -153,7 +154,7 @@
         <section id="content" class="table-layout animated fadeIn">
 
             <!-- begin: .tray-center -->
-            <div class="tray tray-center">
+            <div class="tray tray-center add_client">
                 <form>
                     <div class="form-group row">
                         <label class="col-md-2 control-label">上级客户</label>
@@ -197,10 +198,13 @@
                     <div class="form-group row">
                         <label class="col-md-2 control-label">投资偏好</label>
                         <div class="col-md-5">
-                            <select class="form-control">
-                                <option>同业资产</option>
-                                <option>基金货币</option>
-                                <option>信托产品</option>
+                            <select id="preferenceSelect" multiple="multiple">
+                                <option value="cheese">同业资产（资金、存款、理财）</option>
+                                <option value="tomatoes">货币基金</option>
+                                <option value="mozarella">保本型基金</option>
+                                <option value="mushrooms">证券管理型投资</option>
+                                <option value="pepperoni">非债券</option>
+                                <option value="onions">信托产品</option>
                             </select>
                         </div>
                     </div>
@@ -245,6 +249,8 @@
 <!-- Theme Javascript -->
 <script src="../resource/js/utility.js"></script>
 <script src="../resource/js/main.js"></script>
+<!--plugin-->
+<script src="../resource/plugin/select2/select2.min.js"></script>
 
 <script type="text/javascript">
     jQuery(document).ready(function() {
@@ -252,6 +258,9 @@
         "use strict";
         // Init Theme Core
         Core.init();
+        $('#preferenceSelect').multiselect({
+            buttonClass: 'multiselect dropdown-toggle btn btn-default'
+        })
     });
 </script>
 <!-- END: PAGE SCRIPTS -->

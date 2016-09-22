@@ -154,20 +154,52 @@
         <section id="content" class="table-layout animated fadeIn">
 
             <!-- begin: .tray-center -->
-            <div class="tray tray-center row">
+            <div class="tray tray-center row client_detail">
                 <div class="d_top col-md-8">
                     <div class="client_data" style="background: #fff;padding:10px;">
-                        <p style="font-weight: normal;font-size:18px;">西部证券-固定收益部</p>
-                        <span><label>创建者：</label>邱爽</span>
-                        <span class="ml_20"><label>负责人：</label>张茜茜</span>
-                        <span class="ml_20"><label>上级客户：</label>西部证券-固定收益部</span>
-                        <span class="ml_20"><label>客户类型：</label>销售</span>
-                        <span class="ml_20"><label>客户重要性：</label>普通客户</span><br/>
-                        <span ><label>客户分类：</label>保险</span>
-                        <span class="ml_20"><label>省份：</label>上海</span>
-                        <span class="ml_20"><label>投资偏好：</label>邱爽</span>
-                        <span class="ml_20"><label>详细地址：</label>邱爽</span>
-                        <span class="ml_20"><label>备注：</label>邱爽</span>
+                        <div class="row"> <p style="font-weight: normal;font-size:18px;">西部证券-固定收益部</p></div>
+                        <div class="row mt10">
+                            <div class="col-md-2">创建者：</div>
+                            <div class="col-md-9">周宇轩</div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-md-2">负责人：</div>
+                            <div class="col-md-9">周宇轩、李熏然、王梦</div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-md-2">省份：</div>
+                            <div class="col-md-9">上海</div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-md-2">客户类型：</div>
+                            <div class="col-md-9">销售</div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-md-2">客户分类：</div>
+                            <div class="col-md-9">保险</div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-md-2">客户重要性：</div>
+                            <div class="col-md-9">普通客户</div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-md-2">上级客户：</div>
+                            <div class="col-md-9">西部证券-固定收益部</div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-md-2">投资偏好：</div>
+                            <div class="col-md-9">同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,
+                                标准类资产支持证券和债权,非标准类资产支持证券和债权</div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-md-2">地址：</div>
+                            <div class="col-md-9">上海市黄浦湖滨路00000企业天地5号楼10楼1001</div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-md-2">备注：</div>
+                            <div class="col-md-9">同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,
+                                信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）1</div>
+                        </div>
                     </div>
                     <div class="" style="margin-top: 30px;">
                         <div class="panel panel-visible" id="spy1">
@@ -224,7 +256,10 @@
                         <div class="panel panel-visible">
                             <div class="panel-heading">
                                 <div class="panel-title hidden-xs">
-                                   <span> 活动记录</span>
+                                   <span class="fl"> 活动记录</span>
+                                    <form class="fl ml15" method="get">
+                                        <input type="checkbox">&nbsp;仅显示交易订单
+                                    </form>
                                     <span class="add_item_btn fr" data-href="add_activity"><i class="fa fa-plus"></i></span>
                                 </div>
                             </div>
@@ -341,8 +376,8 @@
                             <table class="table tc-bold-last">
                                 <thead>
                                 <tr class="hidden">
-                                    <th style="width: 100px">姓名</th>
-                                    <th style="width: 180px;">职位</th>
+                                    <th>姓名</th>
+                                    <th>职位</th>
                                     <th>电话</th>
                                     <th>操作</th>
                                 </tr>
@@ -451,7 +486,7 @@
                                 </label>
                             </div>
                             <div class="section row">
-                                    <label class="col-md-3 control-label">活动类型:</label>
+                                    <label class="col-md-3 control-label" style="line-height: 36px;">活动类型:</label>
                                     <div class="col-md-8" style="line-height: 30px;margin-left: -30px;">
                                         <span class="sel-span">电话</span>
                                         <span class="sel-span">面谈</span>
@@ -558,7 +593,7 @@
             <div id="add_team_member" class=" popup-basic admin-form mfp-with-anim mfp-hide">
                 <div class="panel">
                     <div class="panel-heading">
-                        <span class="panel-title"><i class="fa fa-rocket"></i>Leave a comment</span>
+                        <span class="panel-title">添加团队成员</span>
                     </div>
                     <!-- end .panel-heading section -->
 

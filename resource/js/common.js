@@ -10,16 +10,19 @@ function multiSelect(tar){
     }
 
 }
-function singleSelect(){
-    var siblings = $(this).siblings();
-    if($(this).hasClass('gg')){
-        $(this).removeClass("gg");
+function singleSelect(tar){
+    var siblings = $(tar).siblings();
+    if($(tar).hasClass('gg')){
+        $(tar).removeClass("gg");
     }else{
         for(var i=0;i<siblings.length;i++){
             $(siblings[i]).removeClass('gg');
         }
-        $(this).addClass('gg');
+        $(tar).addClass('gg');
     }
+}
 
+//确认对话框
+function confirm_dialog(){
 
 }

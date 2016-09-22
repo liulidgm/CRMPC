@@ -3,7 +3,7 @@
     max-width: 100%;
     margin-bottom: 0;
     background: #fff;
-    border:0px solid #ccc;
+    border:1px solid #ccc;
 }
 .dropdown-menu {
     position: absolute;
@@ -43,10 +43,16 @@
     border-radius: 100%;
 }
 .table > tbody > tr > td{
-    padding: 9px 9px 9px 15px;
+    padding: 5px 15px;
     line-height: 1.49;
     vertical-align: middle;
-    border-top: 1px solid #eeeeee;
+    border-top: 0px solid #eeeeee;
+}
+.client_detail .table > tbody > tr > td {
+    padding: 9px 10px;
+    line-height: 1.49;
+    vertical-align: middle;
+     border-bottom: 1px solid #eeeeee;
 }
 .media {
     color: #999999;
@@ -62,4 +68,72 @@
 .admin-form .panel-title {
     font-size: 18px;
 }
-
+@media (min-width: 768px){
+    .form-horizontal .control-label {
+       padding-top: 0px;
+    }
+}
+.btn {
+    padding: 5px 12px;
+}
+.table > thead > tr > th{
+    padding: 9px 16px;
+}
+.tooltip.top .tooltip-arrow {
+    border-top-color: #07c;
+}
+.tooltip-inner {
+    color: #fff;
+    background-color: #07c;
+}
+@media (min-width: 992px){
+    .client_detail .col-md-2 {
+        width: 14.666667%;
+        font-weight: 600;
+    }
+}
+#add_team_member
+/*Íâ¹Û*/
+#sidebar_left {
+    background-color: #fff;
+}
+#sidebar_left {
+    color: #666!important;
+    background-color: #fff!important;
+}
+.sidebar-menu > li > a {
+    color: #666;
+}
+.sidebar-menu > li > ul {
+    background-color: #fff;
+}
+body.sb-l-m #sidebar_left {
+    background-color: #fff;
+}
+body.sb-l-m .sidebar-menu > li > a > .sidebar-title {
+    background-color: #f8f8f8;
+}
+#topbar.alt {
+    min-height: 40px;
+    padding: 8px;
+}
+.sb-l-o #sidebar_left {
+    left: 0;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+}
+.sidebar-menu {
+    margin-top: 30px;
+}
+.sidebar-widget.author-widget .media-links a:hover {
+    color: #666;
+}
+.sidebar-widget.author-widget .media-body {
+    color: #999;
+}
+.sidebar-widget.author-widget {
+    margin-top: 0px;
+}
+.sidebar-menu li > a.menu-open > span.caret {
+    color: #858483;
+}

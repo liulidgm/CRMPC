@@ -1,3 +1,4 @@
+/*列表页*/
 .checkbox-text{font-weight: 500;}
 .sel-span{display: block;
     margin-right: 30px;
@@ -10,19 +11,37 @@
     color: #fff;
     border-radius: 4px;
 }
+#content{
+    background: #fff;
+}
+#update_charge_person table{border: 0}
+#update_charge_person tr td{font-weight: normal;text-align: left;border-top: 1px solid #ccc;font-size: 14px;padding:9px 15px;}
 /*添加客户*/
-.control-label{line-height: 35px;}
 /*.sel-span:hover{color: #07c;}*/
-.page-title{font-size: 20px;margin-bottom: 0px;line-height: 40px;}
+.page-title{font-size: 18px;margin-bottom: 0px;line-height: 40px;}
+.add_client .dropdown-menu {position: absolute;top: 100%;  left: 0px;}
+
 /*detail*/
+.client_detail table{border: 0px;}
+.client_data label{color: #07c;}
 .comment{cursor: pointer;}
 .comment.active{color: #07c;}
-#add_team_member tr td{font-size: 14px;text-align: left;font-weight: normal;}
-
+#add_team_member table{border: 0;}
+#add_team_member tr td{font-size: 14px;text-align: left;font-weight: normal;padding: 9px 15px;border-top:1px solid #eeeeee;}
+#add_team_member .panel-heading {padding: 10px 15px; }
 /*icon*/
 .gg{background: url("../images/lx.png") no-repeat right;width: 20px;height: 20px;}
 .comment:hover{color: #07c;}
 .comment:active{color: #07c;}
+
+.text_overflow{
+    display: block;
+    width:150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 45px!important;
+}
 .fl{float: left;}
 .fr{float: right}
 .ml_-35{margin-left: -35px;}
