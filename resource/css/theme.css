@@ -8125,7 +8125,7 @@ html {
 }
 body {
   font-family: "微软雅黑";
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.49;
   color: #666666;
@@ -18798,7 +18798,7 @@ body.tray-rescale .tray-right:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 200px;
   min-height: 100%;
   padding-top: 60px;
   padding-bottom: 40px;
@@ -19059,7 +19059,7 @@ body.tray-rescale .tray-right:hover {
   display: inline-block;
   margin-top: 2px;
   margin-bottom: 2px;
-  color: #AAA;
+ /* color: #AAA;*/
   font-size: 12px;
   text-decoration: none;
 }
@@ -19699,7 +19699,7 @@ body.sb-l-m.mobile-view .nano > .nano-pane {
   overflow: hidden;
 }
 .sb-l-o #content_wrapper {
-  margin-left: 250px;
+  margin-left: 200px;
 }
 /*left sidebar closed*/
 .sb-l-c #sidebar_left {

@@ -8,7 +8,7 @@
 .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: -66px;
+    left: -128px;
 }
 .checkbox-custom label:before {
     border: 1px solid #ccc;
@@ -81,6 +81,9 @@
 }
 .tooltip.top .tooltip-arrow {
     border-top-color: #07c;
+}
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #07c;
 }
 .tooltip-inner {
     color: #fff;

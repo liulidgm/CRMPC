@@ -63,7 +63,7 @@
               </a>
               <div class="media-body">
                 <div class="media-links">
-                   <a href="#" class="sidebar-menu-toggle">刘莉 -</a> <a href="pages_login(alt).html">退出</a>
+                   <span class="sidebar-menu-toggle">刘莉 -</span> <a href="pages_login(alt).html">退出</a>
                 </div>
                 <div class="media-author">Webcome</div>
               </div>
@@ -235,31 +235,31 @@
           <table class="table table-striped table-hover">
             <thead>
             <tr>
-              <th style="width: 150px;">客户名称</th>
+              <th style="width: 200px;">客户名称</th>
               <th style="width: 100px;">客户类型</th>
               <th style="width: 120px;">客户分类</th>
               <th style="width: 100px;">客户省份</th>
               <th style="width: 150px;">投资偏好</th>
               <th style="width: 100px;">创建者</th>
-              <th style="width: 100px;">联系人</th>
+              <th style="width: 150px;">联系人</th>
               <th style="width: 150px;">备注</th>
               <th></th>
             </tr></thead>
             <tbody id="clientList">
               <tr>
-                <td class="text_overflow" data-toggle="tooltip" title="招商银行-上海分行资产管理部">招商银行-上海分行资产管理部</td>
+                <td style="width: 200px;" class="text_overflow" data-toggle="tooltip" title="招商银行-上海分行资产管理部">招商银行-上海分行资产管理部</td>
                 <td>销售</td>
                 <td>银行-国股大行</td>
                 <td>上海</td>
                 <td class="text_overflow" data-toggle="tooltip" title="同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）">同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）</td>
-                <td>周宇轩</td>
-                <td>周宇轩</td>
-                <td class="text_overflow" data-toggle="tooltip" title="用户修改模块测试">用户修改模块测试</td>
-                <td>
+                <td >周宇轩</td>
+                <td>周宇轩,周宇轩,周宇轩，周宇轩</td>
+                <td class="text_overflow" data-toggle="tooltip" title="用户修改模块测试">用户修改模块测试用户修改模块测试</td>
+                <td class="tc">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
-                      <span class="caret ml5"></span>
-                    </button>
+                    <span class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-cog fs18"></i>
+                    </span>
                     <ul class="dropdown-menu" role="menu">
                       <li>
                         <a href="#">编辑</a>
@@ -276,7 +276,7 @@
               </tr>
 
               <tr>
-                <td  class="text_overflow" data-toggle="tooltip" title="换手机">换手机</td>
+                <td style="width: 200px;"  class="text_overflow" data-toggle="tooltip" title="换手机">换手机</td>
                 <td>销售</td>
                 <td>券商</td>
                 <td>上海</td>
@@ -284,11 +284,11 @@
                 <td>刘莉</td>
                 <td>刘莉</td>
                 <td  class="text_overflow" data-toggle="tooltip" title="方便">方便</td>
-                <td>
+                <td class="tc">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
-                      <span class="caret ml5"></span>
-                    </button>
+                    <span class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-cog fs18"></i>
+                    </span>
                     <ul class="dropdown-menu" role="menu">
                       <li>
                         <a href="#">编辑</a>
@@ -297,7 +297,7 @@
                         <a class="add_item_btn" data-href="update_charge_person">维护负责人</a>
                       </li>
                       <li>
-                        <a href="#">设为关键客户</a>
+                        <a href="#" onclick="ch()">设为关键客户</a>
                       </li>
                     </ul>
                   </div>
@@ -305,7 +305,7 @@
               </tr>
 
               <tr>
-                <td class="text_overflow" data-toggle="tooltip" title="招商银行-上海分行资产管理部">招商银行-上海分行资产管理部</td>
+                <td style="width: 200px;" class="text_overflow" data-toggle="tooltip" title="招商银行-上海分行资产管理部">招商银行-上海分行资产管理部</td>
                 <td>销售</td>
                 <td>银行-国股大行</td>
                 <td>上海</td>
@@ -313,11 +313,11 @@
                 <td>周宇轩</td>
                 <td>周宇轩</td>
                 <td class="text_overflow" data-toggle="tooltip" title="用户修改模块测试">用户修改模块测试</td>
-                <td>
+                <td class="tc">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">操作
-                      <span class="caret ml5"></span>
-                    </button>
+                    <span class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-cog fs18"></i>
+                    </span>
                     <ul class="dropdown-menu" role="menu">
                       <li>
                         <a href="#">编辑</a>
@@ -428,7 +428,7 @@
   <script type="text/javascript">
   jQuery(document).ready(function() {
     "use strict";
-    // Init Theme Core    
+    // Init Theme Core
     Core.init();
     //tooltips
     $("[data-toggle='tooltip']").tooltip();

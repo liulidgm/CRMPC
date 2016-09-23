@@ -40,10 +40,19 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 45px!important;
+    line-height:45px!important;
+}
+.multi_text_overflow{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .fl{float: left;}
 .fr{float: right}
+.tc{text-align: center;}
+.fs18{font-size: 18px;color: #07c;}
 .ml_-35{margin-left: -35px;}
 .lh_28{line-height: 28px;}
 .ml_20{margin-left: 20px;}
