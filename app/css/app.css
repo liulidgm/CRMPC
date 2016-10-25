@@ -1,0 +1,21 @@
+﻿*{font-family: "微软雅黑";}
+.container{background: #e9e9e9;}
+.item{background: #fff;padding: 0 10px;}
+.item .detail{display: none;    padding: 10px;border-top: 1px solid #eee;}
+.item .title{height: 44px;}
+.item .title h3{width: 50%;float: left;margin:0px;line-height: 44px;color: #333;}
+.item .title span{line-height: 44px;font-size: 20px;}
+.item .detail_row{height: 25px;}
+.item .detail_title{float: left;width: 32%;}
+.item .check_more{    text-align: center;color: #999;line-height: 25px;}
+.item .tip{color: #999;}
+.item .list_padding{min-height:60px;border-bottom: 1px solid #e9e9e9;padding: 10px 0;}
+.ellipsis{overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+.item .margin_10{margin: 10px 0;}
+#scale_chart{display: none;}
+#performance{display: none;}
+.modal{position: fixed;height: 100%;width: 100%;background: #000;background: rgba(0,0,0,.8);z-index: 100;display: none;top: 0; left: 0;}
+.dn{display: none;}
+.mt10{margin-top: 10px;}
+.fl{float: left;}
+.fr{float: right;}

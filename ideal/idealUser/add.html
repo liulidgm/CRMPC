@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>新增资讯</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="../../resource/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="../../resource/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../resource/css/admin.css">
+    <!-- Admin Forms CSS -->
+    <link rel="stylesheet" type="text/css" href="../../resource/css/admin-forms.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="dashboard-page">
+<!-- Start: Main -->
+<div id="main">
+    <!-- Start: Header -->
+    <header class="navbar navbar-fixed-top navbar-shadow">
+        <div class="navbar-branding">
+            <a class="navbar-brand" href="dashboard.html">
+                <b>CRM</b>Admin
+            </a>
+            <span id="toggle_sidemenu_l" class="ad ad-lines"></span>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown menu-merge">
+                <div class="navbar-btn btn-group">
+                    <button data-toggle="dropdown" class="btn btn-sm dropdown-toggle">
+                        <span class="fa fa-bell-o fs14 va-m"></span>
+                        <span class="badge badge-danger">9</span>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <!-- End: Header -->
+    <!-- Start: Sidebar -->
+    <aside id="sidebar_left" class="nano nano-light affix">
+
+        <!-- Start: Sidebar Left Content -->
+        <div class="sidebar-left-content nano-content">
+
+            <!-- Start: Sidebar Header -->
+            <header class="sidebar-header">
+                <!-- Sidebar Widget - Author -->
+                <div class="sidebar-widget author-widget">
+                    <div class="media">
+                        <a class="media-left" href="#">
+                            <img src="../../resource/images/3.jpg" class="img-responsive">
+                        </a>
+                        <div class="media-body">
+                            <div class="media-links">
+                                <span class="sidebar-menu-toggle">刘莉 -</span> <a href="pages_login(alt).html">退出</a>
+                            </div>
+                            <div class="media-author">Webcome</div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- End: Sidebar Header -->
+
+            <!-- Start: Sidebar Menu -->
+            <ul class="nav sidebar-menu">
+                <li>
+                    <a class="accordion-toggle" href="#">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span class="sidebar-title">客户</span>
+                        <span class="caret"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="accordion-toggle" href="#">
+                        <span class="glyphicon glyphicon-fire"></span>
+                        <span class="sidebar-title">资讯</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="nav sub-nav">
+                        <li>
+                            <a href="admin_plugins-panels.html">
+                                <span class="glyphicon glyphicon-book"></span>列表 </a>
+                        </li>
+                        <li>
+                            <a href="admin_plugins-modals.html">
+                                <span class="glyphicon glyphicon-modal-window"></span> 资讯标签 </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <!-- End: Sidebar Menu -->
+        </div>
+        <!-- End: Sidebar Left Content -->
+
+    </aside>
+    <!-- End: Sidebar Left -->
+    <section id="content_wrapper">
+        <!-- Start: Topbar -->
+        <header id="topbar" class="alt admin-form">
+            <div class="col-md-7"><p class="page-title">添加IDEAL用户</p></div>
+        </header>
+        <!-- End: Topbar -->
+        <section id="content" class="table-layout animated fadeIn add_ideal">
+            <div class="tray tray-center">
+                <form class="form-horizontal" role="form" id="add_ideal_form">
+                    <div class="row">
+                        <label class="col-md-2 control-label mt10">姓名</label>
+                        <div class="col-md-6 ml_-35 mt5">
+                            <input type="text" class="form-control pull-right" name="username" placeholder="请输入用户姓名">
+                        </div>
+                    </div>
+                    <div class="row mt10">
+                        <label class="col-md-2 control-label mt10">账号</label>
+                        <div class="col-md-6 ml_-35 mt5">
+                            <input type="text" class="form-control pull-right" name="phone" placeholder="请输入用户账号">
+                        </div>
+                    </div>
+                    <div class="row mt10 pr">
+                        <label class="col-md-2 control-label mt10">所属客户</label>
+                        <div class="col-md-6 ml_-35 mt5">
+                            <input type="text" class="form-control pull-right" name="topClientName" id="topClientName" onkeyup="search_user()" placeholder="请输入所属客户">
+                        </div>
+                        <div class="search_result">
+                            <ul>
+                                <li onclick="hiddenUserList(this)">中邮证券-资产管理部</li>
+                                <li onclick="hiddenUserList(this)">中邮证券</li>
+                                <li onclick="hiddenUserList(this)">中邮证券-资产管理部中邮证券-资产管</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt10">
+                        <label class="col-md-7 control-label mt10 title_label">投资偏好设置</label>
+                    </div>
+                    <div class="row mt10">
+                        <label class="col-md-2 control-label mt10">同业资产</label>
+                        <div class="col-md-6 ml_-35 mt10">
+                            <span class="pre_label mr5">同业存款</span>
+                            <span class="pre_label mr5">通道存款</span>
+                            <span class="pre_label mr5">结构性存款</span>
+                            <span class="pre_label mr5">银行理财</span>
+                            <span class="pre_label mr5">收益凭证</span>
+                            <span class="pre_label mr5">两融收益权</span>
+                            <span class="pre_label mr5">资产包回购</span>
+                        </div>
+                    </div>
+                    <div class="row mt10">
+                        <label class="col-md-2 control-label mt10">票据</label>
+                        <div class="col-md-6 ml_-35 mt10">
+                            <span class="pre_label mr5">银票</span>
+                            <span class="pre_label mr5">商票</span>
+                        </div>
+                    </div>
+                    <div class="row mt10">
+                        <label class="col-md-2 control-label mt10">信用债</label>
+                        <div class="col-md-6 ml_-35 mt10">
+                            <span class="pre_label mr5">SCP</span>
+                            <span class="pre_label mr5">CP</span>
+                            <span class="pre_label mr5">MTN</span>
+                            <span class="pre_label mr5">PPN</span>
+                            <span class="pre_label mr5">项目收益票据</span>
+                            <span class="pre_label mr5">次级债</span>
+                            <span class="pre_label mr5">企业债</span>
+                            <span class="pre_label mr5">可转债</span>
+                            <span class="pre_label mr5">公司债</span>
+                        </div>
+                    </div>
+                    <div class="row mt10">
+                        <label class="col-md-2 control-label mt10">投资支持证券</label>
+                        <div class="col-md-6 ml_-30 mt10">
+                            <span class="pre_label mr5">COL</span>
+                            <span class="pre_label mr5">ABS</span>
+                            <span class="pre_label mr5">类ABS</span>
+                            <span class="pre_label mr5">REITS</span>
+                            <span class="pre_label mr5">RMBS</span>
+                        </div>
+                    </div>
+                    <div class="row mt10">
+                        <div class="col-md-4 mt10 tr" >
+                            <button class="btn btn-lg btn-primary" type="submit" onclick="submit_ideal()">提交</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+        <!-- Start: Content-Wrapper -->
+    </section>
+</div>
+<!-- jQuery -->
+<script src="../../resource/js/jquery-1.11.1.min.js"></script>
+<script src="../../resource/js/jquery_ui/jquery-ui.min.js"></script>
+<!-- Theme Javascript -->
+<script src="../../resource/js/utility.js"></script>
+<script src="../../resource/js/demo.js"></script>
+<script src="../../resource/js/main.js"></script>
+<script src="../../resource/js/common.js"></script>
+<script src="../../resource/js/validate/jquery.validate.js"></script>
+<script src="../../resource/js/validate/messages_zh.js"></script>
+<script src="../../resource/js/validate/additional-methods.js"></script>
+<script>
+    jQuery(document).ready(function() {
+        "use strict";
+        // Init Theme Core
+        Core.init();
+        // Init Demo JS
+        $(".pre_label").on("click",function(){
+            if($(this).hasClass("active")){
+                $(this).removeClass("active");
+            }else{
+                $(this).addClass("active");
+            }
+        });
+        $("#add_ideal_form").validate({
+            rules: {
+                username: "required",
+                phone:  {
+                    required: true,
+                    lenientTel: true
+                },
+                topClientName:"required"
+            },
+            messages: {
+                username: "请输入用户名",
+                phone:  {
+                    required: "请输入账号",
+                    lenientTel: "手机号格式不正确"
+                },
+                topClientName:"请输入上级客户名称"
+            },
+            submitHandler:function(form){
+                alert("提交事件!");
+                form.submit();
+            }
+        });
+    })
+    function search_user(){
+        $(".search_result").css("display","block");
+    }
+    function hiddenUserList(tar){
+        $("#topClientName").val($(tar).html());
+        $($($(tar).parent()).parent()).css("display","none");
+    }
+  /*  function submit_ideal(){
+        $("#add_ideal_form").validate();
+    }*/
+</script>
+</body>
+</html>

@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="../resource/css/theme.css">
   <link rel="stylesheet" type="text/css" href="../resource/css/reset.css">
   <link rel="stylesheet" type="text/css" href="../resource/css/admin.css">
+  <link rel="stylesheet" type="text/css" href="../resource/fonts/glyphicons-pro/glyphicons-pro.css">
   <!-- Admin Forms CSS -->
   <link rel="stylesheet" type="text/css" href="../resource/css/admin-forms.css">
 <!--plugin-->
@@ -76,21 +77,29 @@
         <ul class="nav sidebar-menu">
           <li>
             <a class="accordion-toggle" href="#">
-              <span class="glyphicon glyphicon-user"></span>
+              <span class="glyphicons glyphicons-glass"></span>
               <span class="sidebar-title">客户</span>
+              <span class="caret"></span>
+            </a>
+          </li>
+          <li>
+            <a class="accordion-toggle" href="#">
+              <span class="glyphicon glyphicon-fire"></span>
+              <span class="sidebar-title">资讯</span>
               <span class="caret"></span>
             </a>
             <ul class="nav sub-nav">
               <li>
                 <a href="admin_plugins-panels.html">
-                  <span class="glyphicon glyphicon-list"></span> 列表 </a>
+                  <span class="glyphicon glyphicon-book"></span>列表 </a>
               </li>
               <li>
                 <a href="admin_plugins-modals.html">
-                  <span class="glyphicon glyphicon-plus"></span> 添加客户 </a>
+                  <span class="glyphicon glyphicon-modal-window"></span> 资讯标签 </a>
               </li>
             </ul>
           </li>
+
         </ul>
         <!-- End: Sidebar Menu -->
       </div>
@@ -104,16 +113,7 @@
       <header id="topbar" class="alt admin-form">
         <div class="col-md-7"><p class="page-title">客户</p></div>
         <div class="col-md-5">
-          <form method="post" action="" id="form-ui">
-            <div class="smart-widget sm-right smr-50">
-              <label class="field">
-                <input type="text" name="sub" id="sub" class="gui-input" placeholder="查询客户或活动记录">
-              </label>
-              <button type="submit" class="button btn-primary">
-                <i class="fa fa-search"></i>
-              </button>
-            </div>
-          </form>
+          <button type="button" class="btn btn-primary fr add_client_btn"><i class="fa fa-plus"></i>&nbsp;添加客户</button>
         </div>
 
       </header>
@@ -247,14 +247,14 @@
             </tr></thead>
             <tbody id="clientList">
               <tr>
-                <td style="width: 200px;" class="text_overflow" data-toggle="tooltip" title="招商银行-上海分行资产管理部">招商银行-上海分行资产管理部</td>
+                <td style="width: 200px;">招商银行-上海分行资产管理部行资产管理部</td>
                 <td>销售</td>
                 <td>银行-国股大行</td>
                 <td>上海</td>
-                <td class="text_overflow" data-toggle="tooltip" title="同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）">同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）</td>
+                <td class="ellipsis" data-toggle="tooltip" data-placement="bottom" title="同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）">同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）</td>
                 <td >周宇轩</td>
-                <td>周宇轩,周宇轩,周宇轩，周宇轩</td>
-                <td class="text_overflow" data-toggle="tooltip" title="用户修改模块测试">用户修改模块测试用户修改模块测试</td>
+                <td class="ellipsis">周宇轩,周宇轩,周宇轩，周宇轩</td>
+                <td class="ellipsis" data-toggle="tooltip" data-placement="bottom" title="用户修改模块测试">用户修改模块测试用户修改模块测试</td>
                 <td class="tc">
                   <div class="btn-group">
                     <span class="dropdown-toggle" data-toggle="dropdown">
@@ -265,7 +265,7 @@
                         <a href="#">编辑</a>
                       </li>
                       <li>
-                        <a class="add_item_btn" data-href="update_charge_person">维护负责人</a>
+                        <a href="#" class="add_item_btn" data-href="update_charge_person">维护负责人</a>
                       </li>
                       <li>
                         <a href="#" onclick="ch()">设为关键客户</a>
@@ -276,7 +276,7 @@
               </tr>
 
               <tr>
-                <td style="width: 200px;"  class="text_overflow" data-toggle="tooltip" title="换手机">换手机</td>
+                <td style="width: 200px;">换手机</td>
                 <td>销售</td>
                 <td>券商</td>
                 <td>上海</td>
@@ -305,14 +305,14 @@
               </tr>
 
               <tr>
-                <td style="width: 200px;" class="text_overflow" data-toggle="tooltip" title="招商银行-上海分行资产管理部">招商银行-上海分行资产管理部</td>
+                <td style="width: 200px;">招商银行-上海分行资产管理部</td>
                 <td>销售</td>
                 <td>银行-国股大行</td>
                 <td>上海</td>
-                <td class="text_overflow" data-toggle="tooltip" title="同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）">同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）</td>
+                <td class="ellipsis" data-toggle="tooltip" title="同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）">同业资产（资金、存款、理财）,货币基金,保本型基金,信托产品 ,证券管理型投资,票据及信用证,信用债,非标债权,标准类资产支持证券和债权,非标准类资产支持证券和债权,产业基金投资,资本市场类投资（定增/质押/二级市场配资）</td>
                 <td>周宇轩</td>
                 <td>周宇轩</td>
-                <td class="text_overflow" data-toggle="tooltip" title="用户修改模块测试">用户修改模块测试</td>
+                <td class="ellipsis" data-toggle="tooltip" title="用户修改模块测试">用户修改模块测试</td>
                 <td class="tc">
                   <div class="btn-group">
                     <span class="dropdown-toggle" data-toggle="dropdown">
@@ -359,6 +359,16 @@
             <div class="panel">
               <div class="panel-heading" style="padding: 10px 15px;">
                 <span class="panel-title" style="font-size: 18px;font-weight: normal">维护负责人</span>
+                <form method="post" action="">
+                  <div class="smart-widget sm-right smr-50">
+                    <label class="field">
+                      <input type="text" class="gui-input" placeholder="输入负责人">
+                    </label>
+                    <button type="submit" class="button btn-primary">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </form>
               </div>
               <!-- end .panel-heading section -->
 
@@ -371,22 +381,22 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                      <td>李娜</td>
-                    </tr>
-                    <tr>
-                      <td>李杰</td>
-                    </tr>
-                    <tr>
-                      <td>蔡盛贤</td>
-                    </tr>
-                    <tr>
-                      <td>刘莉</td>
-                    </tr>
-                    <tr>
-                      <td>谢挺</td>
-                    </tr>
-
+                      <tr>
+                        <td>李娜</td>
+                      </tr>
+                      <tr>
+                        <td>李杰</td>
+                      </tr>
+                      <tr>
+                        <td>蔡盛贤</td>
+                      </tr>
+                      <tr>
+                        <td>刘莉</td>
+                      </tr>
+                      <tr>
+                        <td>谢挺</td>
+                      </tr>
+                      <!--<div class="no-data">暂无内容</div>-->
                     </tbody>
                   </table>
 
@@ -394,7 +404,7 @@
                 <!-- end .form-body section -->
 
                 <div class="panel-footer">
-                  <button type="submit" class="button btn-primary">提交</button>
+                  <a id="save-button" onclick="close_m()" class="button btn-primary">提交</a>
                 </div>
                 <!-- end .form-footer section -->
               </form>
@@ -424,6 +434,7 @@
 <script src="../resource/js/main.js"></script>
   <!--plugin-->
   <script src="../resource/plugin/magnific/jquery.magnific-popup.min.js"></script>
+  <script src="../resource/js/confirm.js"></script>
   <script src="../resource/js/common.js"></script>
   <script type="text/javascript">
   jQuery(document).ready(function() {
@@ -514,6 +525,14 @@
     $("#update_charge_person tr").click(function(){
       singleSelect(this);
     });
+    //js处理文本溢出
+    var ellipsis_l = $('.ellipsis');
+    for(var i = 0;i<ellipsis_l.length;i++){
+      var str = $(ellipsis_l[i]).html();
+      var ellipsis_str = ellipsis(str,20);
+      $(ellipsis_l[i]).html(ellipsis_str);
+    }
+
   });
 
   function getparameter(){
@@ -556,6 +575,18 @@
     } else {
       return false;
     }
+  }
+  function close_m(){
+    Confirm.show('', '确定要删除此记录吗', {
+      '是': {
+        'primary': true,
+        'callback': function() {
+          Confirm.hide();
+          $.magnificPopup.close();
+        }
+      }
+    });
+
   }
 
   </script>

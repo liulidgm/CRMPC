@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>机构列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="../resource/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/admin.css">
+    <!-- Admin Forms CSS -->
+    <link rel="stylesheet" type="text/css" href="../resource/css/admin-forms.css">
+    <!--plugin-->
+    <link rel="stylesheet" href="../resource/plugin/datepicker/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" type="text/css" href="../resource/plugin/magnific/magnific-popup.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="dashboard-page">
+<div id="main">
+    <!-- Start: Header -->
+    <header class="navbar navbar-fixed-top navbar-shadow">
+        <div class="navbar-branding">
+            <a class="navbar-brand" href="dashboard.html">
+                <b>CRM</b>Admin
+            </a>
+            <span id="toggle_sidemenu_l" class="ad ad-lines"></span>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown menu-merge">
+                <div class="navbar-btn btn-group">
+                    <button data-toggle="dropdown" class="btn btn-sm dropdown-toggle">
+                        <span class="fa fa-bell-o fs14 va-m"></span>
+                        <span class="badge badge-danger">9</span>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <!-- End: Header -->
+    <!-- Start: Sidebar -->
+    <aside id="sidebar_left" class="nano nano-light affix">
+        <!-- Start: Sidebar Left Content -->
+        <div class="sidebar-left-content nano-content">
+            <!-- Start: Sidebar Header -->
+            <header class="sidebar-header">
+                <!-- Sidebar Widget - Author -->
+                <div class="sidebar-widget author-widget">
+                    <div class="media">
+                        <a class="media-left" href="#">
+                            <img src="../resource/images/3.jpg" class="img-responsive">
+                        </a>
+                        <div class="media-body">
+                            <div class="media-links">
+                                <span class="sidebar-menu-toggle">刘莉 -</span> <a href="pages_login(alt).html">退出</a>
+                            </div>
+                            <div class="media-author">Webcome</div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- End: Sidebar Header -->
+
+            <!-- Start: Sidebar Menu -->
+            <ul class="nav sidebar-menu">
+                <li>
+                    <a class="accordion-toggle" href="#">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span class="sidebar-title">客户</span>
+                        <span class="caret"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="accordion-toggle" href="#">
+                        <span class="glyphicon glyphicon-fire"></span>
+                        <span class="sidebar-title">资讯</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="nav sub-nav">
+                        <li>
+                            <a href="admin_plugins-panels.html">
+                                <span class="glyphicon glyphicon-book"></span>列表 </a>
+                        </li>
+                        <li>
+                            <a href="admin_plugins-modals.html">
+                                <span class="glyphicon glyphicon-modal-window"></span> 资讯标签 </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <!-- End: Sidebar Menu -->
+        </div>
+        <!-- End: Sidebar Left Content -->
+
+    </aside>
+    <section id="content_wrapper">
+        <!-- Start: Topbar -->
+        <header id="topbar" class="alt admin-form found_menu">
+            <div class="col-md-4"><p class="page-title">机构列表</p></div>
+            <div class="col-md-3 pull-right ml_-60">
+                <label class="field prepend-icon file">
+                    <span class="button btn-primary">基金/证券公司导入</span>
+                    <input type="file" class="gui-file">
+                </label>
+            </div>
+            <div class="col-md-2 pull-right">
+                <a type="button" class="add_item_btn btn btn-primary fr mt5" data-href="add_inititution">基金/证券公司新增</a>
+            </div>
+        </header>
+        <!-- End: Topbar -->
+        <section id="content" class="table-layout animated fadeIn ideal_list">
+            <div class="tray tray-center">
+                <form class="form-horizontal" role="form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <label class="col-md-2 control-label mt10">公司名称</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" placeholder="请输入公司名称">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <label class="col-md-2 control-label mt10">公司类型</label>
+                                <div class="col-md-10 mt5" >
+                                    <span class="sel-span">基金公司</span>
+                                    <span class="sel-span">证券公司</span>
+                                    <span class="sel-span">其他</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt10 mb10">
+                        <div class="col-md-6 tr" >
+                            <button class="btn btn-primary">重置</button>
+                            <button class="btn btn-primary">查询</button>
+                        </div>
+                    </div>
+                </form>
+                <table class="table table-striped table-hover mt20" style="width: 70%;;">
+                    <thead>
+                        <tr>
+                            <th>公司名称</th>
+                            <th>公司类型</th>
+                            <th>修改</th>
+                            <th>删除</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="">华夏基金</a></td>
+                            <td>基金公司</td>
+                            <td class="add_item_btn" data-href="update_inititution"><i class="fa fa-edit icon_fs18"></i></td>
+                            <td><i class="fa fa-trash icon_fs18" onclick="ch()"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--尽调-->
+            <div id="add_inititution" class=" popup-basic admin-form mfp-with-anim mfp-hide">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <span class="panel-title">新增机构</span>
+                    </div>
+                    <!-- end .panel-heading section -->
+
+                    <form method="post" id="institution_form">
+                        <div class="panel-body p25">
+                            <div class="row mb10">
+                                <label class="col-md-3 mt15">
+                                    公司名称
+                                </label>
+                                <div class="col-md-9 ml_-15">
+                                    <input type="text" name="name" class="gui-input required" placeholder="请输入公司名称">
+                                </div>
+                            </div>
+                            <div class="row mb10">
+                                <label class="col-md-3 mt15">
+                                    公司类型
+                                </label>
+                                <div class="col-md-9 ml_-15 mt10">
+                                    <span class="sel-span">基金公司</span>
+                                    <span class="sel-span">证券公司</span>
+                                    <span class="sel-span">其他</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .form-body section -->
+
+                        <div class="panel-footer tr">
+                            <button type="submit" class="button btn-primary">提交</button>
+                        </div>
+                        <!-- end .form-footer section -->
+                    </form>
+                </div>
+                <!-- end: .panel -->
+            </div>
+            <div id="update_inititution" class=" popup-basic admin-form mfp-with-anim mfp-hide">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <span class="panel-title">修改机构</span>
+                    </div>
+                    <!-- end .panel-heading section -->
+
+                    <form method="post" id="update_institution_form">
+                        <div class="panel-body p25">
+                            <div class="row mb10">
+                                <label class="col-md-3 mt15">
+                                    公司名称
+                                </label>
+                                <div class="col-md-9 ml_-15">
+                                    <input type="text" name="name" class="gui-input required" placeholder="请输入公司名称">
+                                </div>
+                            </div>
+                            <div class="row mb10">
+                                <label class="col-md-3 mt15">
+                                    公司类型
+                                </label>
+                                <div class="col-md-9 ml_-15 mt10">
+                                    <span class="sel-span">基金公司</span>
+                                    <span class="sel-span">证券公司</span>
+                                    <span class="sel-span">其他</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .form-body section -->
+
+                        <div class="panel-footer tr">
+                            <button type="submit" class="button btn-primary">提交</button>
+                        </div>
+                        <!-- end .form-footer section -->
+                    </form>
+                </div>
+                <!-- end: .panel -->
+            </div>
+        </section>
+        <!-- Start: Content-Wrapper -->
+    </section>
+</div>
+</div>
+<script src="../resource/js/jquery-1.11.1.min.js"></script>
+<script src="../resource/js/jquery_ui/jquery-ui.min.js"></script>
+<!--plugin-->
+<script src="../resource/plugin/magnific/jquery.magnific-popup.min.js"></script>
+<!-- Theme Javascript -->
+<script src="../resource/js/utility.js"></script>
+<script src="../resource/js/demo.js"></script>
+<script src="../resource/js/main.js"></script>
+<script src="../resource/js/common.js"></script>
+<script>
+    jQuery(document).ready(function() {
+        "use strict";
+        // Init Theme Core
+        Core.init();
+        $('.sel-span').click(function(){
+            if($(this).hasClass('sel-active')){
+                $(this).removeClass('sel-active');
+            }else{
+                $(this).addClass('sel-active');
+            }
+
+        });
+        //dialog
+        $('.add_item_btn').on('click', function() {
+            var activeModal = $('#'+$(this).data('href'));
+            //获取联系人详情信息
+            $(this).data("id");//根据此id获取详情信息，依次放入详情框中
+            // Inline Admin-Form example
+            $.magnificPopup.open({
+                removalDelay: 500,
+                items: {
+                    src: activeModal
+                },
+                // overflowY: 'hidden', //
+                callbacks: {
+                    beforeOpen: function(e) {
+                        var Animation ='mfp-sign';
+                        this.st.mainClass = Animation;
+                    }
+                },
+                midClick: true
+            });
+
+        });
+    })
+    function ch() {
+        if(confirm('确定要删除吗？')) {
+
+        } else {
+            return false;
+        }
+    }
+
+</script>
+</body>
+</html>

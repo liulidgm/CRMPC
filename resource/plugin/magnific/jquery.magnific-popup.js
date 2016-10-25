@@ -398,6 +398,7 @@ MagnificPopup.prototype = {
 	 * Helper for close() function
 	 */
 	_close: function() {
+		alert("close");
 		_mfpTrigger(CLOSE_EVENT);
 
 		var classesToRemove = REMOVING_CLASS + ' ' + READY_CLASS + ' ';

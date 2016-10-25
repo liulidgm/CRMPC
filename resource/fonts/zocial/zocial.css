@@ -452,8 +452,8 @@ button:-moz-focus-inner {
 	padding: 0;
 }
 
-/* Reference icons from font-files
-** Base 64-encoded version recommended to resolve cross-site font-loading issues
+/* Reference icons from fonts-files
+** Base 64-encoded version recommended to resolve cross-site fonts-loading issues
 */
 
 @font-face {

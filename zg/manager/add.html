@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>新增投资经理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="../../resource/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="../../resource/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../resource/css/admin.css">
+    <!-- Admin Forms CSS -->
+    <link rel="stylesheet" type="text/css" href="../../resource/css/admin-forms.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="dashboard-page">
+<div id="main">
+    <!-- Start: Header -->
+    <header class="navbar navbar-fixed-top navbar-shadow">
+        <div class="navbar-branding">
+            <a class="navbar-brand" href="dashboard.html">
+                <b>CRM</b>Admin
+            </a>
+            <span id="toggle_sidemenu_l" class="ad ad-lines"></span>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown menu-merge">
+                <div class="navbar-btn btn-group">
+                    <button data-toggle="dropdown" class="btn btn-sm dropdown-toggle">
+                        <span class="fa fa-bell-o fs14 va-m"></span>
+                        <span class="badge badge-danger">9</span>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <!-- End: Header -->
+    <!-- Start: Sidebar -->
+    <aside id="sidebar_left" class="nano nano-light affix">
+        <!-- Start: Sidebar Left Content -->
+        <div class="sidebar-left-content nano-content">
+            <!-- Start: Sidebar Header -->
+            <header class="sidebar-header">
+                <!-- Sidebar Widget - Author -->
+                <div class="sidebar-widget author-widget">
+                    <div class="media">
+                        <a class="media-left" href="#">
+                            <img src="../../resource/images/3.jpg" class="img-responsive">
+                        </a>
+                        <div class="media-body">
+                            <div class="media-links">
+                                <span class="sidebar-menu-toggle">刘莉 -</span> <a href="pages_login(alt).html">退出</a>
+                            </div>
+                            <div class="media-author">Webcome</div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- End: Sidebar Header -->
+
+            <!-- Start: Sidebar Menu -->
+            <ul class="nav sidebar-menu">
+                <li>
+                    <a class="accordion-toggle" href="#">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span class="sidebar-title">客户</span>
+                        <span class="caret"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="accordion-toggle" href="#">
+                        <span class="glyphicon glyphicon-fire"></span>
+                        <span class="sidebar-title">资讯</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="nav sub-nav">
+                        <li>
+                            <a href="admin_plugins-panels.html">
+                                <span class="glyphicon glyphicon-book"></span>列表 </a>
+                        </li>
+                        <li>
+                            <a href="admin_plugins-modals.html">
+                                <span class="glyphicon glyphicon-modal-window"></span> 资讯标签 </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <!-- End: Sidebar Menu -->
+        </div>
+        <!-- End: Sidebar Left Content -->
+
+    </aside>
+    <section id="content_wrapper">
+        <!-- Start: Topbar -->
+        <header id="topbar" class="alt admin-form found_menu">
+            <div class="col-md-4"><p class="page-title">新增投资经理</p></div>
+        </header>
+        <!-- End: Topbar -->
+        <section id="content" class="table-layout animated fadeIn ideal_list">
+            <div class="tray tray-center">
+                <form class="form-horizontal" role="form" id="add_fund_manager">
+                    <div class="row">
+                        <label class="col-md-2 control-label mt10">姓名</label>
+                        <div class="col-md-6 ml_-60">
+                            <input type="text" class="form-control" name="manager_name" placeholder="请输入投资经理姓名">
+                        </div>
+                    </div>
+                    <div class="row mt10 mb10">
+                        <label class="col-md-2 control-label mt10">证券公司</label>
+                        <div class="col-md-6 ml_-60" >
+                            <input type="text" class="form-control" name="company_name" placeholder="请输入证券公司名称"/>
+                        </div>
+                    </div>
+                    <div class="row mt10 mb10">
+                        <label class="col-md-2 control-label mt10">头像</label>
+                        <div class="col-md-8 ml_-60" >
+                            <div class="panel mt20" id="spy1">
+                                <div class="panel-body pn">
+                                    <div class="row table-layout table-clear-xs">
+                                        <div class="col-xs-12 col-sm-7">
+                                            <div class="img-container pv10">
+                                                <img src="../../resource/images/flower.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-5 bg-light br-l br-grey va-t pv10">
+                                            <div class="clearfix">
+                                                <div class="img-preview preview-lg"><img src="../../resource/images/flower.jpg"></div>
+                                                <div class="img-preview preview-md"><img src="../../resource/images/flower.jpg"></div>
+                                                <div class="img-preview preview-sm"><img src="../../resource/images/flower.jpg"></div>
+                                                <div class="img-preview preview-xs"><img src="../../resource/images/flower.jpg"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+                                    <div class="btn-group">
+                                        <button class="btn btn-primary btn-sm" data-method="rotate" data-option="-45" type="button" title="Rotate Left">
+                                                <span class="docs-tooltip" data-toggle="tooltip" title="">
+                                                    <span class="fa fa-rotate-left"></span>
+                                                </span>
+                                        </button>
+                                        <button class="btn btn-primary btn-sm" data-method="rotate" data-option="45" type="button" title="Rotate Right">
+                                              <span class="docs-tooltip" data-toggle="tooltip" title="">
+                                                <span class="fa fa-rotate-right"></span>
+                                              </span>
+                                        </button>
+                                        <label class="btn btn-primary btn-sm btn-upload" for="inputImage" title="Upload image file">
+                                            <input class="sr-only" id="inputImage" name="file" type="file" accept="image/*">
+                                                  <span class="docs-tooltip" data-toggle="tooltip" title="">
+                                                    <span class="fa fa-upload"></span>
+                                                  </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt10 mb10">
+                        <label class="col-md-2 control-label mt10">描述</label>
+                        <div class="col-md-6 ml_-60" >
+                            <textarea class="form-control" id="textArea2" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt10 mb10 tc">
+                       <button class="btn btn-lg btn-primary">提交</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Start: Content-Wrapper -->
+    </section>
+</div>
+</div>
+<script src="../../resource/js/jquery-1.11.1.min.js"></script>
+<script src="../../resource/js/jquery_ui/jquery-ui.min.js"></script>
+<!--uploder image plugin-->
+<script src="../../resource/plugin/cropper/cropper.js"></script>
+<script src="../../resource/plugin/imagezoom/jquery.elevatezoom.js"></script>
+<script src="../../resource/plugin/cropper/initCropper.js"></script>
+<script src="../../resource/js/validate/jquery.validate.js"></script>
+<!-- Theme Javascript -->
+<script src="../../resource/js/utility.js"></script>
+<script src="../../resource/js/demo.js"></script>
+<script src="../../resource/js/main.js"></script>
+<script src="../../resource/js/common.js"></script>
+<script>
+    jQuery(document).ready(function() {
+        "use strict";
+        // Init Theme Core
+        Core.init();
+        //
+        Demo.init();
+        $("#add_fund_manager").validate({
+            rules:{
+                manager_name:"required",
+                company_name:"required"
+            },
+            messages:{
+                manager_name:"请输入基金经理姓名",
+                company_name:"请输入基金公司名称"
+            }
+        })
+    })
+
+</script>
+</body>
+</html>

@@ -6,7 +6,7 @@
  *  License - http://fontawesome.io/license
 */
 
-/* Load font library */
+/* Load fonts library */
 @font-face {
   font-family: 'FontAwesome';
   src: url('fontawesome-webfont.eot?v=4.3.0');
@@ -19,7 +19,7 @@
   font-style: normal;
 }
 
-/* font base class */
+/* fonts base class */
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -29,7 +29,7 @@
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
 }
-/* makes the font 33% larger relative to the icon container */
+/* makes the fonts 33% larger relative to the icon container */
 .fa-lg {
   font-size: 1.33333333em;
   line-height: 0.75em;

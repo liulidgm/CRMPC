@@ -160,7 +160,14 @@
                         <label class="col-md-2 control-label">上级客户</label>
                         <div class="col-md-5">
                             <input type="text" class="form-control" placeholder="请输入上级客户">
-                            <div></div>
+                            <div class="search_result">
+                                <ul>
+                                    <li>请输入上级客户</li>
+                                    <li>请输入上级客户</li>
+                                    <li>请输入上级客户</li>
+                                    <li>请输入上级客户</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -172,7 +179,7 @@
                     <div class="form-group row">
                         <label class="col-md-2 control-label">客户类型</label>
                         <div class="col-md-5 lh_28">
-                            <span class="sel-span sel-active" data-property="sale">销售</span>
+                            <span class="sel-span" data-property="sale">销售</span>
                             <span class="sel-span" data-property="investbank">投行</span>
                         </div>
                     </div>
@@ -263,6 +270,19 @@
             buttonClass: 'multiselect dropdown-toggle btn btn-default'
         })
     });
+    $(function(){
+        $(".sel-span").click(function(){
+            if($(this).hasClass("sel-active")){
+                $(this).removeClass("sel-active");
+            }else{
+               for(var i=0;i<$(this).siblings().length;i++){
+                   $($(this).siblings()[i]).removeClass("sel-active");
+               }
+                $(this).addClass("sel-active");
+            }
+        });
+    });
+
 </script>
 <!-- END: PAGE SCRIPTS -->
 

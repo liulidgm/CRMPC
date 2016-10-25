@@ -684,7 +684,7 @@ Copyright (c) 2014 Daniel Eden
 /*===============================================
   AdminDesigns Custom Icon Library
 ================================================*/
-/* Load font library */
+/* Load fonts library */
 @font-face {
   font-family: "AdminDesigns";
   src: url("../fonts/admindesigns/admindesigns.eot");
@@ -728,7 +728,7 @@ Copyright (c) 2014 Daniel Eden
  *  http://getbootstrap.com/components/
  *  Creative Commons Attribution 3.0
 */
-/* Load font library */
+/* Load fonts library */
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../fonts/glyphicons/glyphicons-halflings-regular.eot');
@@ -1526,10 +1526,10 @@ Copyright (c) 2014 Daniel Eden
   Font Awesome Icon Library
 =================================================
  *  Font Awesome 4.3.0 by @davegandy
- *  http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license
+ *  http://font-awesome.io - @font-awesome
+ *  License - http://font-awesome.io/license
 */
-/* Load font library */
+/* Load fonts library */
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/font-awesome/fontawesome-webfont.eot?v=4.3.0');
@@ -1537,7 +1537,7 @@ Copyright (c) 2014 Daniel Eden
   font-weight: normal;
   font-style: normal;
 }
-/* font base class */
+/* fonts base class */
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -1547,7 +1547,7 @@ Copyright (c) 2014 Daniel Eden
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
 }
-/* makes the font 33% larger relative to the icon container */
+/* makes the fonts 33% larger relative to the icon container */
 .fa-lg {
   font-size: 1.33333333em;
   line-height: 0.75em;
@@ -4026,7 +4026,7 @@ div.DTE_Inline div.DTE_Field input {
 }
 .fileupload .thumbnail {
   cursor: pointer;
-  overflow: hidden;
+  /*overflow: hidden;*/
   vertical-align: middle;
   text-align: center;
   padding: 5px;
@@ -13719,7 +13719,7 @@ div.switch.round label:after {
 .checkbox-custom label {
   cursor: pointer;
   position: relative;
-  padding-left: 32px;
+  padding-left: 22px;
   margin-right: 15px;
   margin-bottom: 5px;
 }
@@ -13729,8 +13729,8 @@ div.switch.round label:after {
   position: absolute;
   top: 0;
   left: 0;
-  width: 22px;
-  height: 21px;
+  width: 15px;
+  height: 15px;
   background-color: #FFF;
   border: 1px solid #666;
   border-width: 2px;
@@ -13743,8 +13743,8 @@ div.switch.round label:after {
   font-family: "FontAwesome";
   content: "\f00c";
   font-size: 12px;
-  top: 4px;
-  left: 4px;
+  top: 1px;
+  left: 0px;
   width: 0;
   height: 0;
   transform: rotate(-13deg);
@@ -13859,7 +13859,7 @@ div.switch.round label:after {
 }
 /* Buttons with Icons 
 * Cross browser problems were creating problems when
-* an icon was given a larger font size than its sibling
+* an icon was given a larger fonts size than its sibling
 * text. To fix Line height, vertical align, and top
 * positioning have been redefined */
 .btn .glyphicon,
@@ -13968,7 +13968,7 @@ i.field-icon-right {
   font-size: 14px;
   vertical-align: middle;
 }
-/* Mildly styles a font awesome based icon group
+/* Mildly styles a fonts awesome based icon group
  * used in occasionaly in panel heading. Look at 
  * message widget on index.html for example */
 .mini-action-icons .fa {
@@ -14665,7 +14665,7 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 0px solid #e5e5e5;
   min-height: 16.49px;
 }
 .modal-header .close {
@@ -14684,7 +14684,7 @@ ol.timeline-list li.timeline-item .timeline-date {
   padding: 10px;
   text-align: right;
   border-top: 1px solid #e5e5e5;
-  background: #f2f2f2;
+  background: #fff;
 }
 .modal-footer .btn + .btn {
   margin-left: 5px;
@@ -14705,7 +14705,7 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
+    width: 400px;
     margin: 30px auto;
   }
   .modal-content {
@@ -17082,7 +17082,7 @@ table.tc-text-primary-3 tbody td:nth-child(3),
 table.tc-text-primary-last tbody td:last-child {
   color: #4a89dc;
 }
-/* font weights */
+/* fonts weights */
 table.tc-fw600-1 tbody td:first-child,
 table.tc-fw600-2 tbody td:nth-child(2),
 table.tc-fw600-3 tbody td:nth-child(3),
@@ -17095,7 +17095,7 @@ table.tc-fw600-3 tbody td:nth-child(3),
 table.tc-fw600-last tbody td:last-child {
   font-weight: 600;
 }
-/* font sizes */
+/* fonts sizes */
 table.tc-fs13-1 tbody td:first-child,
 table.tc-fs13-2 tbody td:nth-child(2),
 table.tc-fs13-3 tbody td:nth-child(3),
@@ -18870,7 +18870,7 @@ body.tray-rescale .tray-right:hover {
 .sidebar-menu > li > ul {
   clear: both;
   display: none;
-  width: 250px;
+  width: 200px;
   height: auto;
 }
 .sidebar-menu li > a.menu-open + ul {
@@ -19052,7 +19052,7 @@ body.tray-rescale .tray-right:hover {
 }
 .sidebar-widget.author-widget .media-left img {
   max-width: 40px;
-  border: 2px solid #888;
+  border: 1px solid #ccc;
   border-radius: 50%;
 }
 .sidebar-widget.author-widget .media-links a {

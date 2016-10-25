@@ -5,6 +5,7 @@
     background: #fff;
     border:1px solid #ccc;
 }
+.table tr{border:1px solid #eee!important;}
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -15,12 +16,14 @@
     border-width: 1px;
 }
 @media (min-width: 992px) {
-   /* .col-md-9 {
-        width: 62%;
-    }*/
     .col-md-2 {
         width: 9.666667%;
     }
+    .ideal_list .col-md-2{width: 12.666667%}
+    #add-image .col-md-2{width: 14.666667%}
+    .message .col-md-2{width: 14.666667%}
+    .found_menu .col-md-2{width: 10.666667%}
+    .zg_detail .col-md-2{width: 16.66666667%}
 }
 @media (min-width: 768px){
     .form-horizontal .control-label {
@@ -37,13 +40,19 @@
     height: 40px;
     line-height: 40px;
 }
+.fund_detail .panel-heading {
+    position: relative;
+    height: 52px;
+    line-height: 49px;
+}
+
 .thumbnail {
      padding: 0px;
      border: 0px solid #dddddd;
     border-radius: 100%;
 }
 .table > tbody > tr > td{
-    padding: 5px 15px;
+    padding: 10px 15px;
     line-height: 1.49;
     vertical-align: middle;
     border-top: 0px solid #eeeeee;
@@ -63,10 +72,10 @@
 
 }
 .admin-form .panel-heading {
-    padding: 0px 20px;
+    padding: 5px 20px!important;
 }
 .admin-form .panel-title {
-    font-size: 18px;
+    font-size: 18px!important;
 }
 @media (min-width: 768px){
     .form-horizontal .control-label {
@@ -94,8 +103,11 @@
         width: 14.666667%;
         font-weight: 600;
     }
+    #link_detail .col-md-2{
+        width: 15.666667%;
+    }
 }
-#add_team_member
+#link_detail
 /*Õ‚π€*/
 #sidebar_left {
     background-color: #fff;

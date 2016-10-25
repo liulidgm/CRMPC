@@ -1,126 +1,58 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>登录</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" type="text/css" href="../resource/css/theme.css">
     <!-- Admin Forms CSS -->
     <link rel="stylesheet" type="text/css" href="../resource/css/admin-forms.min.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../resource/css/admin.css">
+    <style>
+        .mt{margin-top: 100px;}
+        @media (max-width: 375px) {
+            .mt{margin-top: 30px;}
+        }
+    </style>
 </head>
-
-<body class="external-page sb-l-c sb-r-c">
-
-<!-- Start: Main -->
-<div id="main" class="animated fadeIn">
-
-    <!-- Start: Content-Wrapper -->
-    <section id="content_wrapper">
-
-        <!-- begin canvas animation bg -->
-        <div id="canvas-wrapper">
-            <canvas id="demo-canvas"></canvas>
-        </div>
-
-        <!-- Begin: Content -->
-        <section id="content">
-
-            <div class="admin-form theme-info" id="login1" style="max-width: 400px;">
-                <div class="panel panel-info mt10 br-n">
-                    <div class="panel-heading heading-border bg-white">
-                        <span class="panel-title">登录</span>
+<body style="background: #fff;">
+<div class="container mt">
+    <div class="row">
+        <div class="col-md-4 col-xs-6 col-md-push-4 col-xs-push-3 tc"><h2>民商金服CRM</h2></div>
+    </div>
+    <div class="row mt30">
+        <form class="form-horizontal col-md-4 col-xs-12 col-md-push-4" role="form">
+            <input type="hidden" id="c" name="c" value=""/>
+            <div class="form-group">
+                <div class="col-md-12 col-xs-12">
+                    <div class="bs-component">
+                        <input type="text" name="userName" class="form-control" placeholder="请输入用户名">
                     </div>
-                    <!-- end .form-header section -->
-                    <form method="post" action="/" id="contact">
-                        <div class="panel-body bg-light p30">
-                            <div class="row">
-                                    <div class="section">
-                                        <label for="username" class="field-label text-muted fs18 mb10">用户名</label>
-                                        <label for="username" class="field prepend-icon">
-                                            <input type="text" name="username" id="username" class="gui-input" placeholder="请输入用户名">
-                                            <label for="username" class="field-icon">
-                                                <i class="fa fa-user"></i>
-                                            </label>
-                                        </label>
-                                    </div>
-                                    <!-- end section -->
-                                    <div class="section">
-                                        <label for="username" class="field-label text-muted fs18 mb10">密码</label>
-                                        <label for="password" class="field prepend-icon">
-                                            <input type="password" name="password" id="password" class="gui-input" placeholder="请输入密码">
-                                            <label for="password" class="field-icon">
-                                                <i class="fa fa-lock"></i>
-                                            </label>
-                                        </label>
-                                    </div>
-                                    <!-- end section -->
-                            </div>
-                        </div>
-                        <!-- end .form-body section -->
-                        <div class="panel-footer clearfix p10 ph15">
-                            <button type="submit" class="button btn-primary mr10 pull-right">登录</button>
-                        </div>
-                        <!-- end .form-footer section -->
-                    </form>
                 </div>
             </div>
-
-        </section>
-        <!-- End: Content -->
-
-    </section>
-    <!-- End: Content-Wrapper -->
-
+            <div class="form-group">
+                <div class="col-md-12 col-xs-12">
+                    <div class="bs-component">
+                        <input type="text" name="pwd" class="form-control" placeholder="请输入密码">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6 col-md-push-6 col-xs-6 col-xs-push-6" style="text-align: right">
+                   <a href="#">忘记密码？</a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-lg btn-primary btn-block">登录</button>
+        </form>
+    </div>
 </div>
-<!-- End: Main -->
-
-<!-- BEGIN: PAGE SCRIPTS -->
-
-<!-- jQuery -->
-<!-- jQuery -->
 <script src="../resource/js/jquery-1.11.1.min.js"></script>
-<script src="../resource/js/jquery_ui/jquery-ui.min.js"></script>
-<!-- Theme Javascript -->
-<script src="../resource/js/utility.js"></script>
-<script src="../resource/js/main.js"></script>
-<script src="../resource/js/demo.js"></script>
-
-<!-- CanvasBG Plugin(creates mousehover effect) -->
-<script src="../resource/js/canvasbg.js"></script>
-
-<!-- Page Javascript -->
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-
-        "use strict";
-
-        // Init Theme Core
-        Core.init();
-
-        // Init Demo JS
-        Demo.init();
-
-        // Init CanvasBG and pass target starting location
-        CanvasBG.init({
-            Loc: {
-                x: window.innerWidth / 2,
-                y: window.innerHeight / 3.3
-            },
-        });
-
-    });
+<script>
+    if (navigator.userAgent.match(/.*Mobile.*/)) { // 来自手机
+        $("#c").val('mobile');
+    }else{
+        $("#c").val('pc');
+    }
 </script>
-
-<!-- END: PAGE SCRIPTS -->
-
 </body>
-
 </html>
